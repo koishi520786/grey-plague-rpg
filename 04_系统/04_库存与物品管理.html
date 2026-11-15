@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>库存与物品管理 · 灰疫之年 · 末日丧尸跑团库</title>
+<meta name="description" content="现代丧尸末日文字跑团知识库">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="in">
+  <button class="iconbtn menubtn" id="menuBtn">目录</button>
+  <a class="brand" href="../index.html">灰疫之年<em>·</em>跑团库</a>
+  <div class="tsearch"><input id="topSearch" placeholder="搜索全库，回车确认"></div>
+  <a class="iconbtn" href="../search.html">搜索</a>
+  <button class="iconbtn" id="themeBtn">明/暗</button>
+</div></header>
+<div class="layout">
+<aside id="sidebar"><div class="grp"><span>导航</span><a href="../index.html">首页</a><a href="../search.html">搜索</a></div>
+<div class="grp"><span>根目录</span>
+<a href="../00_GM启动提示词.html" title="00_GM启动提示词.md">00_GM启动提示词</a>
+<a href="../AI_START_HERE.html" title="AI_START_HERE.md">AI_START_HERE</a>
+<a href="../README.html" title="README.md">README</a>
+<a href="../本地存档模板.html" title="本地存档模板.md">本地存档模板</a>
+</div>
+<div class="grp"><span>01_世界观</span>
+<a href="../01_世界观/00_世界总索引.html" title="01_世界观/00_世界总索引.md">00_世界总索引</a>
+<a href="../01_世界观/01_灰疫病毒与爆发编年.html" title="01_世界观/01_灰疫病毒与爆发编年.md">01_灰疫病毒与爆发编年</a>
+<a href="../01_世界观/02_临江市地理与关键地点.html" title="01_世界观/02_临江市地理与关键地点.md">02_临江市地理与关键地点</a>
+<a href="../01_世界观/03_幸存者势力与组织.html" title="01_世界观/03_幸存者势力与组织.md">03_幸存者势力与组织</a>
+<a href="../01_世界观/04_气候季节与生存环境.html" title="01_世界观/04_气候季节与生存环境.md">04_气候季节与生存环境</a>
+<a href="../01_世界观/05_现实经济与物资流通.html" title="01_世界观/05_现实经济与物资流通.md">05_现实经济与物资流通</a>
+</div>
+<div class="grp"><span>02_丧尸</span>
+<a href="../02_丧尸/00_丧尸总索引.html" title="02_丧尸/00_丧尸总索引.md">00_丧尸总索引</a>
+<a href="../02_丧尸/01_感染机制与生理.html" title="02_丧尸/01_感染机制与生理.md">01_感染机制与生理</a>
+<a href="../02_丧尸/02_丧尸类型图鉴.html" title="02_丧尸/02_丧尸类型图鉴.md">02_丧尸类型图鉴</a>
+<a href="../02_丧尸/03_分布迁移与对抗.html" title="02_丧尸/03_分布迁移与对抗.md">03_分布迁移与对抗</a>
+</div>
+<div class="grp"><span>03_角色</span>
+<a href="../03_角色/00_角色总索引.html" title="03_角色/00_角色总索引.md">00_角色总索引</a>
+<a href="../03_角色/01_主角沈砚.html" title="03_角色/01_主角沈砚.md">01_主角沈砚</a>
+<a href="../03_角色/02_苏晞人物档案.html" title="03_角色/02_苏晞人物档案.md">02_苏晞人物档案</a>
+<a href="../03_角色/03_幸存者NPC.html" title="03_角色/03_幸存者NPC.md">03_幸存者NPC</a>
+<a href="../03_角色/04_重要NPC与潜在伙伴.html" title="03_角色/04_重要NPC与潜在伙伴.md">04_重要NPC与潜在伙伴</a>
+<a href="../03_角色/05_人物关系网与登场表.html" title="03_角色/05_人物关系网与登场表.md">05_人物关系网与登场表</a>
+</div>
+<div class="grp"><span>04_系统</span>
+<a href="../04_系统/00_系统总索引.html" title="04_系统/00_系统总索引.md">00_系统总索引</a>
+<a href="../04_系统/01_SP结算规则.html" title="04_系统/01_SP结算规则.md">01_SP结算规则</a>
+<a href="../04_系统/03_反刷与成长上限.html" title="04_系统/03_反刷与成长上限.md">03_反刷与成长上限</a>
+<a href="../04_系统/04_库存与物品管理.html" class="cur" title="04_系统/04_库存与物品管理.md">04_库存与物品管理</a>
+</div>
+<div class="grp"><span>06_跑团规则</span>
+<a href="../06_跑团规则/00_规则总索引.html" title="06_跑团规则/00_规则总索引.md">00_规则总索引</a>
+<a href="../06_跑团规则/01_GM运行总则与玩家控制权.html" title="06_跑团规则/01_GM运行总则与玩家控制权.md">01_GM运行总则与玩家控制权</a>
+<a href="../06_跑团规则/02_叙事对话与苏晞演出.html" title="06_跑团规则/02_叙事对话与苏晞演出.md">02_叙事对话与苏晞演出</a>
+<a href="../06_跑团规则/03_判定与战斗.html" title="06_跑团规则/03_判定与战斗.md">03_判定与战斗</a>
+<a href="../06_跑团规则/04_探索搜刮与交易.html" title="06_跑团规则/04_探索搜刮与交易.md">04_探索搜刮与交易</a>
+<a href="../06_跑团规则/05_生存状态与伤病.html" title="06_跑团规则/05_生存状态与伤病.md">05_生存状态与伤病</a>
+<a href="../06_跑团规则/06_剧情推进与GM工具箱.html" title="06_跑团规则/06_剧情推进与GM工具箱.md">06_剧情推进与GM工具箱</a>
+<a href="../06_跑团规则/07_时间推进与状态台账.html" title="06_跑团规则/07_时间推进与状态台账.md">07_时间推进与状态台账</a>
+</div>
+<div class="grp"><span>07_剧本</span>
+<a href="../07_剧本/00_开场与总纲.html" title="07_剧本/00_开场与总纲.md">00_开场与总纲</a>
+<a href="../07_剧本/01_第一章_断电之夜.html" title="07_剧本/01_第一章_断电之夜.md">01_第一章_断电之夜</a>
+<a href="../07_剧本/02_前十四天事件池.html" title="07_剧本/02_前十四天事件池.md">02_前十四天事件池</a>
+</div>
+<div class="grp"><span>08_索引</span>
+<a href="../08_索引/CHECK_REPORT.html" title="08_索引/CHECK_REPORT.md">CHECK_REPORT</a>
+<a href="../08_索引/COUNTS.html" title="08_索引/COUNTS.md">COUNTS</a>
+<a href="../08_索引/KEYWORD_INDEX.html" title="08_索引/KEYWORD_INDEX.md">KEYWORD_INDEX</a>
+<a href="../08_索引/MASTER_INDEX.html" title="08_索引/MASTER_INDEX.md">MASTER_INDEX</a>
+</div>
+<div class="grp"><span>交易系统</span>
+<a href="../交易系统/商品索引.html" title="交易系统/商品索引.md">商品索引</a>
+<a href="../交易系统/末日生存交易手册.html" title="交易系统/末日生存交易手册.md">末日生存交易手册</a>
+</div>
+<div class="grp"><span>研究资料</span>
+<a href="../研究资料/同类作品系统机制对比.html" title="研究资料/同类作品系统机制对比.md">同类作品系统机制对比</a>
+</div>
+<div class="grp"><span>系统设定</span>
+<a href="../系统设定/属性与技能.html" title="系统设定/属性与技能.md">属性与技能</a>
+<a href="../系统设定/经验与等级.html" title="系统设定/经验与等级.md">经验与等级</a>
+</div></aside>
+<main>
+<div class="crumb"><a href="../index.html">灰疫之年 · 末日丧尸跑团库</a> / 04_系统</div><div class="docbar"><span>04_系统/04_库存与物品管理.md</span><span class="sp"></span><a href="https://github.com/koishi520786/grey-plague-rpg/blob/main/04_系统/04_库存与物品管理.md" target="_blank" rel="noopener">Markdown 原文 ↗</a><a href="../search.html?q=库存与物品管理">全库搜索</a></div><article>
+<h1 id="_1">库存与物品管理</h1>
+<h2 id="_2">一、系统没有仓库</h2>
+<p>这是核心设定：<strong>系统只卖货，不存货。</strong></p>
+<ul>
+<li>购买后实物<strong>立刻出现在沈砚手上/脚边</strong>（不能凭空出现在别处）。</li>
+<li>没有"系统空间"，没有"取出一把枪"，没有无限背包。</li>
+<li>因此：<strong>买了就得背，背不动就得扔，扔了就是扔了。</strong></li>
+</ul>
+<p>这一条把系统锁死在物理世界里：钱能买东西，但买不到"不用背"。</p>
+<h2 id="_3">二、负重</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基础负重</td>
+<td>10 + 力量 × 4 kg（沈砚：10 + 48 = <strong>58 kg</strong>）</td>
+</tr>
+<tr>
+<td>舒适负重（无惩罚）</td>
+<td>上限的 50%（29 kg）</td>
+</tr>
+<tr>
+<td>超过 50%</td>
+<td>敏捷类判定 -5，体力消耗 +50%</td>
+</tr>
+<tr>
+<td>超过 80%</td>
+<td>敏捷 -10，无法奔跑，爬楼梯每层 -1 体力</td>
+</tr>
+<tr>
+<td>超过上限</td>
+<td>每 10 分钟 -1 体力，且无法战斗闪避</td>
+</tr>
+</tbody>
+</table>
+<p>背包本身有体积限制：一个 40 升双肩包约能装 12—15 kg 的软物资，硬物资（罐头、弹药、水）按体积算装得更少。<strong>GM 不必精确到升，但要按"鼓不鼓"来判断。</strong></p>
+<h2 id="_4">三、消耗与腐败</h2>
+<table>
+<thead>
+<tr>
+<th>物品</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>打开的水</td>
+<td>24 小时内喝完，否则污染（煮沸可救）</td>
+</tr>
+<tr>
+<td>熟食</td>
+<td>常温 6—12 小时（11 月），冷藏 2—3 天</td>
+</tr>
+<tr>
+<td>生肉</td>
+<td>常温 4 小时</td>
+</tr>
+<tr>
+<td>罐头/压缩饼干/方便面</td>
+<td>数月至数年</td>
+</tr>
+<tr>
+<td>电池</td>
+<td>常温存放，用一次记一次；受潮失效</td>
+</tr>
+<tr>
+<td>弹药</td>
+<td>受潮后哑火率上升（每受潮一次 +10% 哑火）</td>
+</tr>
+<tr>
+<td>药品</td>
+<td>过期不减效（多数），但受潮、暴晒会失效</td>
+</tr>
+<tr>
+<td>汽油/柴油</td>
+<td>可存数月；混水会导致发动机故障</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">四、记录格式（写进存档，不写在正文）</h2>
+<pre><code>【库存 · 2026-11-13 07:00 · 502 室】
+食物：大米 4.2kg｜挂面 2 把｜方便面 5 包｜火腿肠 6 根｜鸡蛋 3 个
+饮水：瓶装 6×550ml｜桶装 8L
+药品：退烧药 6 片｜创可贴 8 张｜碘伏 半瓶｜止泻药 4 粒
+工具：螺丝刀套装｜活动扳手｜绝缘胶带｜扎带 1 包｜铁丝 1 卷
+武器：撬棍 1｜折叠刀 1｜水果刀 1
+其他：蜡烛 3｜火柴 半盒｜打火机 1｜电池 5 号 6 节
+负重：11.4kg / 58kg
+</code></pre>
+<p><strong>只在物品有变化时更新这一栏</strong>，不用每轮重写。</p>
+<h2 id="_6">五、系统购买的入库流程</h2>
+<ol>
+<li>玩家说要买什么 → 查手册条目（编号、价格、库存上限）。</li>
+<li>检查限制：等级要求？声望要求？每日限购？空间够不够？</li>
+<li>扣 SP，显示一行：<code>[已购 · 9mm 手枪 ×1 · -600 SP]</code>。</li>
+<li>实物出现在手上。<strong>这一瞬间如果旁边有人，他们会看见东西凭空出现。</strong></li>
+<li>记进库存。</li>
+</ol>
+<p><strong>第 4 条是关键。</strong> 在苏晞面前买东西，等于在她面前摊牌。在三中买东西，等于把自己交出去。</p>
+<h2 id="_7">六、库存上限与"藏东西"</h2>
+<ul>
+<li>系统不限制购买数量，但限购条目（如弹药每日 30 发）会限制节奏。</li>
+<li>家里能囤多少？按体积算。502 室能囤的极限大约是"两个人三个月"的食物，再多就堆不下，也搬不走。</li>
+<li><strong>囤积会引来问题</strong>：邻居闻到味道、被人看见搬东西、被铁门帮记账。囤得越多，越需要一个能守住的门。</li>
+</ul>
+<h2 id="_8">七、物品的三类来源（记账时分开记）</h2>
+<table>
+<thead>
+<tr>
+<th>来源</th>
+<th>标记</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统购买</td>
+<td><code>[S]</code></td>
+<td>来历不明，被人看见会有麻烦</td>
+</tr>
+<tr>
+<td>现实搜刮</td>
+<td><code>[R]</code></td>
+<td>正常来源，可以拿去交易、送人</td>
+</tr>
+<tr>
+<td>他人赠予/交换</td>
+<td><code>[T]</code></td>
+<td>带人情，也带账</td>
+</tr>
+</tbody>
+</table>
+<p><strong>分开记的理由</strong>：<code>[S]</code> 的东西不能拿出去解释来源。这是玩家要自己权衡的事——系统是最好的补给，也是最难解释的补给。</p>
+</article><div class="pager"><a href="../04_系统/03_反刷与成长上限.html"><span class="lbl">← 上一篇</span>03_反刷与成长上限</a><a href="../06_跑团规则/00_规则总索引.html" style="text-align:right"><span class="lbl">下一篇 →</span>00_规则总索引</a></div>
+</main>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

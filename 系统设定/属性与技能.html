@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>属性与技能 · 灰疫之年 · 末日丧尸跑团库</title>
+<meta name="description" content="现代丧尸末日文字跑团知识库">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="in">
+  <button class="iconbtn menubtn" id="menuBtn">目录</button>
+  <a class="brand" href="../index.html">灰疫之年<em>·</em>跑团库</a>
+  <div class="tsearch"><input id="topSearch" placeholder="搜索全库，回车确认"></div>
+  <a class="iconbtn" href="../search.html">搜索</a>
+  <button class="iconbtn" id="themeBtn">明/暗</button>
+</div></header>
+<div class="layout">
+<aside id="sidebar"><div class="grp"><span>导航</span><a href="../index.html">首页</a><a href="../search.html">搜索</a></div>
+<div class="grp"><span>根目录</span>
+<a href="../00_GM启动提示词.html" title="00_GM启动提示词.md">00_GM启动提示词</a>
+<a href="../AI_START_HERE.html" title="AI_START_HERE.md">AI_START_HERE</a>
+<a href="../README.html" title="README.md">README</a>
+<a href="../本地存档模板.html" title="本地存档模板.md">本地存档模板</a>
+</div>
+<div class="grp"><span>01_世界观</span>
+<a href="../01_世界观/00_世界总索引.html" title="01_世界观/00_世界总索引.md">00_世界总索引</a>
+<a href="../01_世界观/01_灰疫病毒与爆发编年.html" title="01_世界观/01_灰疫病毒与爆发编年.md">01_灰疫病毒与爆发编年</a>
+<a href="../01_世界观/02_临江市地理与关键地点.html" title="01_世界观/02_临江市地理与关键地点.md">02_临江市地理与关键地点</a>
+<a href="../01_世界观/03_幸存者势力与组织.html" title="01_世界观/03_幸存者势力与组织.md">03_幸存者势力与组织</a>
+<a href="../01_世界观/04_气候季节与生存环境.html" title="01_世界观/04_气候季节与生存环境.md">04_气候季节与生存环境</a>
+<a href="../01_世界观/05_现实经济与物资流通.html" title="01_世界观/05_现实经济与物资流通.md">05_现实经济与物资流通</a>
+</div>
+<div class="grp"><span>02_丧尸</span>
+<a href="../02_丧尸/00_丧尸总索引.html" title="02_丧尸/00_丧尸总索引.md">00_丧尸总索引</a>
+<a href="../02_丧尸/01_感染机制与生理.html" title="02_丧尸/01_感染机制与生理.md">01_感染机制与生理</a>
+<a href="../02_丧尸/02_丧尸类型图鉴.html" title="02_丧尸/02_丧尸类型图鉴.md">02_丧尸类型图鉴</a>
+<a href="../02_丧尸/03_分布迁移与对抗.html" title="02_丧尸/03_分布迁移与对抗.md">03_分布迁移与对抗</a>
+</div>
+<div class="grp"><span>03_角色</span>
+<a href="../03_角色/00_角色总索引.html" title="03_角色/00_角色总索引.md">00_角色总索引</a>
+<a href="../03_角色/01_主角沈砚.html" title="03_角色/01_主角沈砚.md">01_主角沈砚</a>
+<a href="../03_角色/02_苏晞人物档案.html" title="03_角色/02_苏晞人物档案.md">02_苏晞人物档案</a>
+<a href="../03_角色/03_幸存者NPC.html" title="03_角色/03_幸存者NPC.md">03_幸存者NPC</a>
+<a href="../03_角色/04_重要NPC与潜在伙伴.html" title="03_角色/04_重要NPC与潜在伙伴.md">04_重要NPC与潜在伙伴</a>
+<a href="../03_角色/05_人物关系网与登场表.html" title="03_角色/05_人物关系网与登场表.md">05_人物关系网与登场表</a>
+</div>
+<div class="grp"><span>04_系统</span>
+<a href="../04_系统/00_系统总索引.html" title="04_系统/00_系统总索引.md">00_系统总索引</a>
+<a href="../04_系统/01_SP结算规则.html" title="04_系统/01_SP结算规则.md">01_SP结算规则</a>
+<a href="../04_系统/03_反刷与成长上限.html" title="04_系统/03_反刷与成长上限.md">03_反刷与成长上限</a>
+<a href="../04_系统/04_库存与物品管理.html" title="04_系统/04_库存与物品管理.md">04_库存与物品管理</a>
+</div>
+<div class="grp"><span>06_跑团规则</span>
+<a href="../06_跑团规则/00_规则总索引.html" title="06_跑团规则/00_规则总索引.md">00_规则总索引</a>
+<a href="../06_跑团规则/01_GM运行总则与玩家控制权.html" title="06_跑团规则/01_GM运行总则与玩家控制权.md">01_GM运行总则与玩家控制权</a>
+<a href="../06_跑团规则/02_叙事对话与苏晞演出.html" title="06_跑团规则/02_叙事对话与苏晞演出.md">02_叙事对话与苏晞演出</a>
+<a href="../06_跑团规则/03_判定与战斗.html" title="06_跑团规则/03_判定与战斗.md">03_判定与战斗</a>
+<a href="../06_跑团规则/04_探索搜刮与交易.html" title="06_跑团规则/04_探索搜刮与交易.md">04_探索搜刮与交易</a>
+<a href="../06_跑团规则/05_生存状态与伤病.html" title="06_跑团规则/05_生存状态与伤病.md">05_生存状态与伤病</a>
+<a href="../06_跑团规则/06_剧情推进与GM工具箱.html" title="06_跑团规则/06_剧情推进与GM工具箱.md">06_剧情推进与GM工具箱</a>
+<a href="../06_跑团规则/07_时间推进与状态台账.html" title="06_跑团规则/07_时间推进与状态台账.md">07_时间推进与状态台账</a>
+</div>
+<div class="grp"><span>07_剧本</span>
+<a href="../07_剧本/00_开场与总纲.html" title="07_剧本/00_开场与总纲.md">00_开场与总纲</a>
+<a href="../07_剧本/01_第一章_断电之夜.html" title="07_剧本/01_第一章_断电之夜.md">01_第一章_断电之夜</a>
+<a href="../07_剧本/02_前十四天事件池.html" title="07_剧本/02_前十四天事件池.md">02_前十四天事件池</a>
+</div>
+<div class="grp"><span>08_索引</span>
+<a href="../08_索引/CHECK_REPORT.html" title="08_索引/CHECK_REPORT.md">CHECK_REPORT</a>
+<a href="../08_索引/COUNTS.html" title="08_索引/COUNTS.md">COUNTS</a>
+<a href="../08_索引/KEYWORD_INDEX.html" title="08_索引/KEYWORD_INDEX.md">KEYWORD_INDEX</a>
+<a href="../08_索引/MASTER_INDEX.html" title="08_索引/MASTER_INDEX.md">MASTER_INDEX</a>
+</div>
+<div class="grp"><span>交易系统</span>
+<a href="../交易系统/商品索引.html" title="交易系统/商品索引.md">商品索引</a>
+<a href="../交易系统/末日生存交易手册.html" title="交易系统/末日生存交易手册.md">末日生存交易手册</a>
+</div>
+<div class="grp"><span>研究资料</span>
+<a href="../研究资料/同类作品系统机制对比.html" title="研究资料/同类作品系统机制对比.md">同类作品系统机制对比</a>
+</div>
+<div class="grp"><span>系统设定</span>
+<a href="../系统设定/属性与技能.html" class="cur" title="系统设定/属性与技能.md">属性与技能</a>
+<a href="../系统设定/经验与等级.html" title="系统设定/经验与等级.md">经验与等级</a>
+</div></aside>
+<main>
+<div class="crumb"><a href="../index.html">灰疫之年 · 末日丧尸跑团库</a> / 系统设定</div><div class="docbar"><span>系统设定/属性与技能.md</span><span class="sp"></span><a href="https://github.com/koishi520786/grey-plague-rpg/blob/main/系统设定/属性与技能.md" target="_blank" rel="noopener">Markdown 原文 ↗</a><a href="../search.html?q=属性与技能">全库搜索</a></div><article>
+<h1 id="_1">属性与技能</h1>
+<blockquote>
+<p>本文件管"一个人的能力怎么算"；经验与等级见 <code>系统设定/经验与等级.md</code>；判定流程、战斗回合、伤害见 <code>06_跑团规则/03_判定与战斗.md</code>。</p>
+</blockquote>
+<hr />
+<h2 id="_2">一、五项属性</h2>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>含义</th>
+<th>直接决定</th>
+<th>常见判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>力量</strong></td>
+<td>搬、砸、拉、顶</td>
+<td>近战伤害修正、负重、破门</td>
+<td>撬门、推倒、拉人、扛人</td>
+</tr>
+<tr>
+<td><strong>敏捷</strong></td>
+<td>快、稳、轻</td>
+<td>闪避、逃跑、先后手、潜行</td>
+<td>无声移动、翻窗、拆弹式精细动作</td>
+</tr>
+<tr>
+<td><strong>体质</strong></td>
+<td>耐、抗、撑</td>
+<td>生命值、抗疲劳、抗失温、抗感染</td>
+<td>硬扛、长时间行动、发烧抵抗</td>
+</tr>
+<tr>
+<td><strong>感知</strong></td>
+<td>看、听、觉</td>
+<td>发现、射击、追踪、识破</td>
+<td>听声辨位、找东西、看穿谎言</td>
+</tr>
+<tr>
+<td><strong>意志</strong></td>
+<td>稳、忍、不退</td>
+<td>恐惧抵抗、忍痛、坚持</td>
+<td>面对尸体、被威胁、做残忍决定</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">数值区间</h3>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th>含义</th>
+<th>例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5—7</td>
+<td>弱（未成年、老人、久病）</td>
+<td>苏晞力量 6</td>
+</tr>
+<tr>
+<td>8—10</td>
+<td>普通偏低</td>
+<td>普通人感知 9</td>
+</tr>
+<tr>
+<td>11—12</td>
+<td>普通</td>
+<td>沈砚力量 12、体质 12</td>
+</tr>
+<tr>
+<td>13—15</td>
+<td>训练过</td>
+<td>郑淑英意志 14</td>
+</tr>
+<tr>
+<td>16—18</td>
+<td>职业级</td>
+<td>赵铁力量 17</td>
+</tr>
+<tr>
+<td>19—20</td>
+<td>人类极限</td>
+<td>极罕见</td>
+</tr>
+<tr>
+<td>21—24</td>
+<td>系统超限</td>
+<td>需付代价</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">派生数值</h3>
+<pre><code>生命值上限 = 体质 × 4（每 10 级额外 +5）
+体力       = 10 + 体质 ÷ 3（向下取整）
+负重上限   = 10 + 力量 × 4 kg
+闪避值     = (敏捷 − 10) × 3（最低 0）
+</code></pre>
+<p>沈砚开局：生命 48 ｜体力 13（记 10/10 用前先按规则换算，见存档模板）｜负重 58kg ｜闪避 3
+苏晞开局：生命 32 ｜体力 12（记 8/10）｜负重 34kg ｜闪避 6</p>
+<blockquote>
+<p><strong>体力记法</strong>：日常只记"当前/上限"，上限用上式算出；苏晞上限低但闪避高，这是"轻"的代价与好处。</p>
+</blockquote>
+<hr />
+<h2 id="_5">二、判定值公式（唯一版本）</h2>
+<pre><code>判定值 = 40 + (属性 − 10) × 4 + 技能等级 × 8 + 情境修正
+</code></pre>
+<ul>
+<li>上下限：5—95。</li>
+<li>对抗时减去对方闪避值。</li>
+<li>情境修正：简单 +20／常规 0／困难 −15／极难 −30／几乎不可能 −45。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>示例</th>
+<th>计算</th>
+<th>判定值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>沈砚用撬棍砸头（力量 12，格斗 0）</td>
+<td>40+8+0−25</td>
+<td>23</td>
+</tr>
+<tr>
+<td>沈砚砸头（格斗练到 2）</td>
+<td>40+8+16−25</td>
+<td>39</td>
+</tr>
+<tr>
+<td>沈砚修发电机（感知 10，机械 2）</td>
+<td>40+0+16</td>
+<td>56</td>
+</tr>
+<tr>
+<td>苏晞记路（感知 13，观察 1）</td>
+<td>40+12+8</td>
+<td>60</td>
+</tr>
+<tr>
+<td>苏晞安抚小孩（意志 9，交涉 1）</td>
+<td>40−4+8</td>
+<td>44</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_6">三、十五项技能</h2>
+<table>
+<thead>
+<tr>
+<th>技能</th>
+<th>管什么</th>
+<th>典型用途</th>
+<th>谁有</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>格斗</strong></td>
+<td>近身打斗</td>
+<td>挥击、招架、膝撞、倒地缠斗</td>
+<td>赵铁 4、阿豹 3</td>
+</tr>
+<tr>
+<td><strong>射击</strong></td>
+<td>枪械与弓弩</td>
+<td>命中、换弹速度、压制</td>
+<td>军人 3—4</td>
+</tr>
+<tr>
+<td><strong>潜行</strong></td>
+<td>不出声地移动</td>
+<td>穿过走廊、开门、绕后</td>
+<td>沈砚 1、苏晞 1</td>
+</tr>
+<tr>
+<td><strong>观察</strong></td>
+<td>看与记</td>
+<td>听声、找物、看穿谎言、认路</td>
+<td>苏晞 1、老陈 3</td>
+</tr>
+<tr>
+<td><strong>医疗</strong></td>
+<td>处理伤口与病人</td>
+<td>止血、缝合、判断感染、静脉穿刺</td>
+<td>郑淑英 4、周妍 3、顾青 1</td>
+</tr>
+<tr>
+<td><strong>机械维修</strong></td>
+<td>修机器</td>
+<td>发动机、发电机、水泵、锁具</td>
+<td>沈砚 2、老周 4</td>
+</tr>
+<tr>
+<td><strong>电工</strong></td>
+<td>电与线路</td>
+<td>接线、改电、修发电机、避开带电危险</td>
+<td>沈砚 1、邝先生 4</td>
+</tr>
+<tr>
+<td><strong>驾驶</strong></td>
+<td>开车</td>
+<td>挪车、脱困、夜间行车</td>
+<td>沈砚 1、罗一鸣 2</td>
+</tr>
+<tr>
+<td><strong>烹饪</strong></td>
+<td>把东西做成能吃的</td>
+<td>热食、省燃料、去异味、腌渍</td>
+<td>苏晞 1、林素秋 3</td>
+</tr>
+<tr>
+<td><strong>交涉</strong></td>
+<td>说服与议价</td>
+<td>砍价、求人、谈判、撒谎</td>
+<td>邹文彬 4、老刀 3</td>
+</tr>
+<tr>
+<td><strong>攀爬</strong></td>
+<td>上高处</td>
+<td>翻墙、爬窗、上消防梯</td>
+<td>江小满 2、邱雁 2</td>
+</tr>
+<tr>
+<td><strong>追踪</strong></td>
+<td>跟人与跟痕迹</td>
+<td>找人、判断人数与时间</td>
+<td>罗一鸣 2、邝先生 3</td>
+</tr>
+<tr>
+<td><strong>缝纫</strong></td>
+<td>修补织物</td>
+<td>补衣、改包、做绑带</td>
+<td>苏晞 1、秦小雨 2</td>
+</tr>
+<tr>
+<td><strong>记账</strong></td>
+<td>管物资账</td>
+<td>盘库存、算配给、估消耗</td>
+<td>苏晞 1、邹文彬 4</td>
+</tr>
+<tr>
+<td><strong>开锁</strong></td>
+<td>开不该开的门</td>
+<td>撬锁、拆门、断链</td>
+<td>老宋 3（钥匙）、眼镜 1（技巧）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">技能等级的含义</h3>
+<table>
+<thead>
+<tr>
+<th>等级</th>
+<th>水平</th>
+<th>现实感</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>不会</td>
+<td>看过，没做过</td>
+</tr>
+<tr>
+<td>1</td>
+<td>入门</td>
+<td>会做，会出错，慢</td>
+</tr>
+<tr>
+<td>2</td>
+<td>熟练</td>
+<td>能独立完成，出错的代价小</td>
+</tr>
+<tr>
+<td>3</td>
+<td>专业</td>
+<td>能教人，能在压力下做</td>
+</tr>
+<tr>
+<td>4</td>
+<td>精通</td>
+<td>能做别人做不了的判断（并发症、疑难故障）</td>
+</tr>
+<tr>
+<td>5</td>
+<td>顶尖</td>
+<td>城市范围内数得着的人</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_8">四、升级条件（三者缺一不可）</h2>
+<table>
+<thead>
+<tr>
+<th>升级</th>
+<th>SP</th>
+<th>训练时间</th>
+<th>实际使用次数</th>
+<th>教练需求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 → 1</td>
+<td>200</td>
+<td>8 小时</td>
+<td>—</td>
+<td>可自学</td>
+</tr>
+<tr>
+<td>1 → 2</td>
+<td>450</td>
+<td>24 小时</td>
+<td>成功 10 次</td>
+<td>可自学</td>
+</tr>
+<tr>
+<td>2 → 3</td>
+<td>900</td>
+<td>48 小时</td>
+<td>成功 25 次</td>
+<td>需教练或技能书</td>
+</tr>
+<tr>
+<td>3 → 4</td>
+<td>1800</td>
+<td>96 小时</td>
+<td>成功 50 次</td>
+<td>需教练（不能只靠书）</td>
+</tr>
+<tr>
+<td>4 → 5</td>
+<td>3600</td>
+<td>200 小时</td>
+<td>成功 100 次</td>
+<td>教练 + 一次实战检验（GM 判定）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>技能书（GROW-05～08）</strong> 只替代"教练"，不替代时间与次数，也不替代 SP 训练费。
+<strong>三种生活技能</strong>（缝纫、记账、开锁）：书价减半，上限 3 级。</p>
+<p><strong>训练时间是这个世界最贵的东西</strong>：连续 8 小时不被打断的学习，本身就是奢侈。GM 可以用"正在训练时外面有动静"来撕掉这段时间。</p>
+<hr />
+<h2 id="_9">五、临时强化剂（花钱买一次上限，随后还债）</h2>
+<table>
+<thead>
+<tr>
+<th>条目</th>
+<th>效果</th>
+<th>价格</th>
+<th>代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GROW-13 体能强化针</td>
+<td>24 小时力量 +2</td>
+<td>400</td>
+<td>之后疲劳 +2；每周 1 支</td>
+</tr>
+<tr>
+<td>GROW-14 神经反射剂</td>
+<td>24 小时敏捷 +2</td>
+<td>450</td>
+<td>之后 6 小时手抖（精细动作 −10）</td>
+</tr>
+<tr>
+<td>GROW-15 负重强化剂</td>
+<td>24 小时负重 +15kg</td>
+<td>260</td>
+<td>之后口渴 +1</td>
+</tr>
+<tr>
+<td>GROW-16 精神稳定剂</td>
+<td>6 小时恐惧/意志判定 +15</td>
+<td>320</td>
+<td>之后 12 小时意志 −1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>设计意图</strong>：给玩家"关键时刻赌一把"的选项，但赌完要付账。<strong>不能用来当日常增益</strong>（每周限购 + 代价叠加）。</p>
+<hr />
+<h2 id="_10">六、上限与不允许的事</h2>
+<ul>
+<li>单项属性上限 <strong>20</strong>；超限 21—24 需 1100 SP/点 + 代价。</li>
+<li>技能上限 <strong>5</strong>。</li>
+<li><strong>不能买"技能熟练度"</strong>：次数必须真打真做。</li>
+<li><strong>不能买"战斗经验"来跳过失败</strong>：被咬、被打断手、被夺刀，这些事发生了就是发生了。</li>
+<li><strong>不能让系统替你做判定</strong>：系统只结算，不掷骰。</li>
+</ul>
+<hr />
+<h2 id="_11">七、苏晞怎么长</h2>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>可行提升</th>
+<th>条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第 1—2 周</td>
+<td>医疗 0→1</td>
+<td>跟着周妍或郑淑英做满 8 小时（"你来做，我看着"）</td>
+</tr>
+<tr>
+<td>第 2—4 周</td>
+<td>观察 1→2</td>
+<td>单独记路成功 10 次以上</td>
+</tr>
+<tr>
+<td>第 3—6 周</td>
+<td>烹饪 1→2、缝纫 1→2</td>
+<td>每天负责做饭/修补</td>
+</tr>
+<tr>
+<td>第 5—8 周</td>
+<td>医疗 1→2</td>
+<td>实际处理伤口 10 次（不要求都成功）</td>
+</tr>
+<tr>
+<td>第 8 周后</td>
+<td>潜行/攀爬 +1</td>
+<td>需要玩家主动带她练，且她愿意</td>
+</tr>
+<tr>
+<td>全程</td>
+<td>属性每 30 天 +1</td>
+<td>训练 + 吃够 + 没病</td>
+</tr>
+<tr>
+<td>上限</td>
+<td>属性 16、技能 4（除医疗可到 5，若她选择走医疗线）</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>她的成长只有一条路</strong>：有人教、有时间、有实践。玩家给不了时间，她就长不起来；玩家不让她做，她就只能停在"会递东西"。</p>
+<hr />
+<h2 id="_12">八、常见判定速查（属性 + 技能）</h2>
+<table>
+<thead>
+<tr>
+<th>行为</th>
+<th>组合</th>
+<th>修正参考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>撬门</td>
+<td>力量 + 机械</td>
+<td>木门 0／防盗门 −25／有撬棍 +15</td>
+</tr>
+<tr>
+<td>静音开门</td>
+<td>敏捷 + 潜行</td>
+<td>老门 −10／上油 +10</td>
+</tr>
+<tr>
+<td>穿走廊</td>
+<td>敏捷 + 潜行</td>
+<td>碎玻璃 −20</td>
+</tr>
+<tr>
+<td>听声辨位</td>
+<td>感知 + 观察</td>
+<td>隔层 −15</td>
+</tr>
+<tr>
+<td>快速搜刮</td>
+<td>感知 + 观察</td>
+<td>每 10 分钟一次</td>
+</tr>
+<tr>
+<td>止血</td>
+<td>感知 + 医疗</td>
+<td>大出血 −15／有急救包 +10</td>
+</tr>
+<tr>
+<td>缝合</td>
+<td>敏捷 + 医疗</td>
+<td>无缝合包 −30</td>
+</tr>
+<tr>
+<td>判断是否被咬</td>
+<td>感知 + 医疗</td>
+<td>伤口在暗处 −15</td>
+</tr>
+<tr>
+<td>说服</td>
+<td>感知 + 交涉</td>
+<td>对方有戒心 −15／有他要的东西 +20</td>
+</tr>
+<tr>
+<td>识破谎言</td>
+<td>感知 + 观察</td>
+<td>老手 −20</td>
+</tr>
+<tr>
+<td>修发动机</td>
+<td>感知 + 机械</td>
+<td>缺零件 −25</td>
+</tr>
+<tr>
+<td>开车脱困</td>
+<td>敏捷 + 驾驶</td>
+<td>路上有尸群 −20</td>
+</tr>
+<tr>
+<td>扛人跑</td>
+<td>力量 + 体质</td>
+<td>每 100 米一次，失败体力 −1</td>
+</tr>
+<tr>
+<td>爬消防梯</td>
+<td>敏捷 + 攀爬</td>
+<td>湿滑 −15</td>
+</tr>
+<tr>
+<td>跟踪</td>
+<td>感知 + 追踪</td>
+<td>雨天 +10／雪地 +20</td>
+</tr>
+<tr>
+<td>保持冷静</td>
+<td>意志（无技能）</td>
+<td>首次见尸体 −10／见熟人 −20</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7">九、特殊能力（系统独占，共 7 项）</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>名称</th>
+<th>价格</th>
+<th>效果</th>
+<th>代价 / 限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SPC-01</td>
+<td>感染感知</td>
+<td>700</td>
+<td>30m 内模糊感知感染者数量与大方向</td>
+<td>只知"多/少"，不知类型；主动使用 −10 SP</td>
+</tr>
+<tr>
+<td>SPC-02</td>
+<td>静默步</td>
+<td>800</td>
+<td>潜行判定 +15</td>
+<td>奔跑无效；负重 &gt;25kg 减半</td>
+</tr>
+<tr>
+<td>SPC-03</td>
+<td>负重骨骼</td>
+<td>600</td>
+<td>负重上限 +10kg</td>
+<td>无</td>
+</tr>
+<tr>
+<td>SPC-04</td>
+<td>快速凝血</td>
+<td>900</td>
+<td>出血时间减半</td>
+<td>仅对沈砚本人</td>
+</tr>
+<tr>
+<td>SPC-05</td>
+<td>低光视觉</td>
+<td>1200</td>
+<td>黑暗视觉惩罚 −25 → −15</td>
+<td>强光下致盲 1 轮</td>
+</tr>
+<tr>
+<td>SPC-06</td>
+<td>目标标记</td>
+<td>400/次（永久 3000）</td>
+<td>标记 1 个目标 24 小时，500m 内感知方位</td>
+<td>同时只 1 个；不告诉你它是否还活着</td>
+</tr>
+<tr>
+<td>SPC-07</td>
+<td>痛觉钝化</td>
+<td>1000</td>
+<td>受伤判定 −10</td>
+<td><strong>隐藏副作用</strong>：自己重伤不觉得，直到倒下</td>
+</tr>
+</tbody>
+</table>
+<p><strong>槽位</strong>：同时持有 3 个；每 5 级 +1 槽（5/10/15/20）；第 4 个槽起需 GROW-09 或等级 15。
+<strong>适应期</strong>：每次购买后 24 小时内所有判定 −5。系统不提示，玩家自己会发现。
+<strong>不可重复购买同一项。</strong></p>
+</article><div class="pager"><a href="../研究资料/同类作品系统机制对比.html"><span class="lbl">← 上一篇</span>同类作品系统机制对比</a><a href="../系统设定/经验与等级.html" style="text-align:right"><span class="lbl">下一篇 →</span>经验与等级</a></div>
+</main>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

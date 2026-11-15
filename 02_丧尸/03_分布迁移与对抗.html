@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>分布、迁移与对抗 · 灰疫之年 · 末日丧尸跑团库</title>
+<meta name="description" content="现代丧尸末日文字跑团知识库">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="in">
+  <button class="iconbtn menubtn" id="menuBtn">目录</button>
+  <a class="brand" href="../index.html">灰疫之年<em>·</em>跑团库</a>
+  <div class="tsearch"><input id="topSearch" placeholder="搜索全库，回车确认"></div>
+  <a class="iconbtn" href="../search.html">搜索</a>
+  <button class="iconbtn" id="themeBtn">明/暗</button>
+</div></header>
+<div class="layout">
+<aside id="sidebar"><div class="grp"><span>导航</span><a href="../index.html">首页</a><a href="../search.html">搜索</a></div>
+<div class="grp"><span>根目录</span>
+<a href="../00_GM启动提示词.html" title="00_GM启动提示词.md">00_GM启动提示词</a>
+<a href="../AI_START_HERE.html" title="AI_START_HERE.md">AI_START_HERE</a>
+<a href="../README.html" title="README.md">README</a>
+<a href="../本地存档模板.html" title="本地存档模板.md">本地存档模板</a>
+</div>
+<div class="grp"><span>01_世界观</span>
+<a href="../01_世界观/00_世界总索引.html" title="01_世界观/00_世界总索引.md">00_世界总索引</a>
+<a href="../01_世界观/01_灰疫病毒与爆发编年.html" title="01_世界观/01_灰疫病毒与爆发编年.md">01_灰疫病毒与爆发编年</a>
+<a href="../01_世界观/02_临江市地理与关键地点.html" title="01_世界观/02_临江市地理与关键地点.md">02_临江市地理与关键地点</a>
+<a href="../01_世界观/03_幸存者势力与组织.html" title="01_世界观/03_幸存者势力与组织.md">03_幸存者势力与组织</a>
+<a href="../01_世界观/04_气候季节与生存环境.html" title="01_世界观/04_气候季节与生存环境.md">04_气候季节与生存环境</a>
+<a href="../01_世界观/05_现实经济与物资流通.html" title="01_世界观/05_现实经济与物资流通.md">05_现实经济与物资流通</a>
+</div>
+<div class="grp"><span>02_丧尸</span>
+<a href="../02_丧尸/00_丧尸总索引.html" title="02_丧尸/00_丧尸总索引.md">00_丧尸总索引</a>
+<a href="../02_丧尸/01_感染机制与生理.html" title="02_丧尸/01_感染机制与生理.md">01_感染机制与生理</a>
+<a href="../02_丧尸/02_丧尸类型图鉴.html" title="02_丧尸/02_丧尸类型图鉴.md">02_丧尸类型图鉴</a>
+<a href="../02_丧尸/03_分布迁移与对抗.html" class="cur" title="02_丧尸/03_分布迁移与对抗.md">03_分布迁移与对抗</a>
+</div>
+<div class="grp"><span>03_角色</span>
+<a href="../03_角色/00_角色总索引.html" title="03_角色/00_角色总索引.md">00_角色总索引</a>
+<a href="../03_角色/01_主角沈砚.html" title="03_角色/01_主角沈砚.md">01_主角沈砚</a>
+<a href="../03_角色/02_苏晞人物档案.html" title="03_角色/02_苏晞人物档案.md">02_苏晞人物档案</a>
+<a href="../03_角色/03_幸存者NPC.html" title="03_角色/03_幸存者NPC.md">03_幸存者NPC</a>
+<a href="../03_角色/04_重要NPC与潜在伙伴.html" title="03_角色/04_重要NPC与潜在伙伴.md">04_重要NPC与潜在伙伴</a>
+<a href="../03_角色/05_人物关系网与登场表.html" title="03_角色/05_人物关系网与登场表.md">05_人物关系网与登场表</a>
+</div>
+<div class="grp"><span>04_系统</span>
+<a href="../04_系统/00_系统总索引.html" title="04_系统/00_系统总索引.md">00_系统总索引</a>
+<a href="../04_系统/01_SP结算规则.html" title="04_系统/01_SP结算规则.md">01_SP结算规则</a>
+<a href="../04_系统/03_反刷与成长上限.html" title="04_系统/03_反刷与成长上限.md">03_反刷与成长上限</a>
+<a href="../04_系统/04_库存与物品管理.html" title="04_系统/04_库存与物品管理.md">04_库存与物品管理</a>
+</div>
+<div class="grp"><span>06_跑团规则</span>
+<a href="../06_跑团规则/00_规则总索引.html" title="06_跑团规则/00_规则总索引.md">00_规则总索引</a>
+<a href="../06_跑团规则/01_GM运行总则与玩家控制权.html" title="06_跑团规则/01_GM运行总则与玩家控制权.md">01_GM运行总则与玩家控制权</a>
+<a href="../06_跑团规则/02_叙事对话与苏晞演出.html" title="06_跑团规则/02_叙事对话与苏晞演出.md">02_叙事对话与苏晞演出</a>
+<a href="../06_跑团规则/03_判定与战斗.html" title="06_跑团规则/03_判定与战斗.md">03_判定与战斗</a>
+<a href="../06_跑团规则/04_探索搜刮与交易.html" title="06_跑团规则/04_探索搜刮与交易.md">04_探索搜刮与交易</a>
+<a href="../06_跑团规则/05_生存状态与伤病.html" title="06_跑团规则/05_生存状态与伤病.md">05_生存状态与伤病</a>
+<a href="../06_跑团规则/06_剧情推进与GM工具箱.html" title="06_跑团规则/06_剧情推进与GM工具箱.md">06_剧情推进与GM工具箱</a>
+<a href="../06_跑团规则/07_时间推进与状态台账.html" title="06_跑团规则/07_时间推进与状态台账.md">07_时间推进与状态台账</a>
+</div>
+<div class="grp"><span>07_剧本</span>
+<a href="../07_剧本/00_开场与总纲.html" title="07_剧本/00_开场与总纲.md">00_开场与总纲</a>
+<a href="../07_剧本/01_第一章_断电之夜.html" title="07_剧本/01_第一章_断电之夜.md">01_第一章_断电之夜</a>
+<a href="../07_剧本/02_前十四天事件池.html" title="07_剧本/02_前十四天事件池.md">02_前十四天事件池</a>
+</div>
+<div class="grp"><span>08_索引</span>
+<a href="../08_索引/CHECK_REPORT.html" title="08_索引/CHECK_REPORT.md">CHECK_REPORT</a>
+<a href="../08_索引/COUNTS.html" title="08_索引/COUNTS.md">COUNTS</a>
+<a href="../08_索引/KEYWORD_INDEX.html" title="08_索引/KEYWORD_INDEX.md">KEYWORD_INDEX</a>
+<a href="../08_索引/MASTER_INDEX.html" title="08_索引/MASTER_INDEX.md">MASTER_INDEX</a>
+</div>
+<div class="grp"><span>交易系统</span>
+<a href="../交易系统/商品索引.html" title="交易系统/商品索引.md">商品索引</a>
+<a href="../交易系统/末日生存交易手册.html" title="交易系统/末日生存交易手册.md">末日生存交易手册</a>
+</div>
+<div class="grp"><span>研究资料</span>
+<a href="../研究资料/同类作品系统机制对比.html" title="研究资料/同类作品系统机制对比.md">同类作品系统机制对比</a>
+</div>
+<div class="grp"><span>系统设定</span>
+<a href="../系统设定/属性与技能.html" title="系统设定/属性与技能.md">属性与技能</a>
+<a href="../系统设定/经验与等级.html" title="系统设定/经验与等级.md">经验与等级</a>
+</div></aside>
+<main>
+<div class="crumb"><a href="../index.html">灰疫之年 · 末日丧尸跑团库</a> / 02_丧尸</div><div class="docbar"><span>02_丧尸/03_分布迁移与对抗.md</span><span class="sp"></span><a href="https://github.com/koishi520786/grey-plague-rpg/blob/main/02_丧尸/03_分布迁移与对抗.md" target="_blank" rel="noopener">Markdown 原文 ↗</a><a href="../search.html?q=分布、迁移与对抗">全库搜索</a></div><article>
+<h1 id="_1">分布、迁移与对抗</h1>
+<h2 id="_2">一、一个区域里有多少</h2>
+<pre><code>区域感染者数量 ≈ 区域常住人口 × 存活感染率 × 时间衰减 × 吸引系数
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>系数</th>
+<th>取值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>存活感染率（D0 时）</td>
+<td>城区 26—32%，老城更高（人口密度+老龄化），新区略低</td>
+</tr>
+<tr>
+<td>时间衰减</td>
+<td>D+7：1.0 ｜ 每周 ×0.93 ｜ 第 9 周后 ×0.6（静默期）</td>
+</tr>
+<tr>
+<td>吸引系数</td>
+<td>安静居民区 0.6 ｜ 主干道/超市/医院 1.5 ｜ 有持续噪音源 2.0 ｜ 已被清理 0（保持 0，除非有新事件）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>示例</strong>：幸福里小区 320 户，约 860 人 → 感染 250 人左右 → D+7 时间衰减后仍活跃约 60—90。这就是为什么"下楼"是件大事。</p>
+<p><strong>不用每次都算。</strong> 一旦算过就把数字写在场景卡上（"3 号楼：楼道 3 只，二层 1 只 Z-3，院内 7 只"），之后只按事件变动。</p>
+<h2 id="_3">二、它们被什么吸引</h2>
+<table>
+<thead>
+<tr>
+<th>刺激</th>
+<th>半径</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通说话</td>
+<td>60 m</td>
+<td>三人以上交谈 +20 m</td>
+</tr>
+<tr>
+<td>喊叫/尖叫</td>
+<td>300 m</td>
+<td>苏晞的尖叫是 300 米级的</td>
+</tr>
+<tr>
+<td>关门声、金属碰撞</td>
+<td>120 m</td>
+<td>每 10 米衰减，遇墙减半</td>
+</tr>
+<tr>
+<td>汽车引擎</td>
+<td>500—800 m</td>
+<td>单向吸引，不会追车</td>
+</tr>
+<tr>
+<td>枪声（手枪）</td>
+<td>800 m</td>
+<td>会导致整个街区向声源移动，持续 20—40 分钟</td>
+</tr>
+<tr>
+<td>枪声（霰弹/步枪）</td>
+<td>1200 m</td>
+<td>同上，且会惊动其他势力</td>
+</tr>
+<tr>
+<td>玻璃破碎</td>
+<td>200 m</td>
+<td>一次性的，但很"尖"</td>
+</tr>
+<tr>
+<td>血腥味</td>
+<td>顺风 200 m</td>
+<td>逆风 40 m；雨天减半</td>
+</tr>
+<tr>
+<td>烟火</td>
+<td>500 m+</td>
+<td>光与味双吸引</td>
+</tr>
+<tr>
+<td>婴儿哭声</td>
+<td>400 m</td>
+<td>这个设定要让玩家记住</td>
+</tr>
+<tr>
+<td>发电机</td>
+<td>300 m</td>
+<td>低频噪音，持续吸引</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">三、迁移规律</h2>
+<p>感染者没有"迁徙"，只有"被动漂移"。三件事造成区域间数量变化：</p>
+<ol>
+<li><strong>趋声</strong>：声音源结束后，群会原地滞留 20—60 分钟，然后散开。散的方​​向随机。</li>
+<li><strong>趋血</strong>：闻到血会持续靠近，直到血源消失（人跑了、或者人死了）。</li>
+<li><strong>趋群</strong>：单独的个体会向"能听见同类的地方"移动。所以安静的地方会越来越空，吵闹的地方会越来越密。</li>
+</ol>
+<p><strong>推论（可以直接告诉玩家，只要 NPC 够老练）</strong>：
+- 想清一栋楼，先把它们引到别处，或者从上往下清。
+- 想睡觉，先让周围至少 300 米内没有持续噪音。
+- 想转移，走"越来越安静"的方向。</p>
+<h2 id="_5">四、有效对抗手段</h2>
+<table>
+<thead>
+<tr>
+<th>手段</th>
+<th>对 Z-1/Z-2</th>
+<th>对 Z-5</th>
+<th>代价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>钝器（钢管、锤、工兵铲）</td>
+<td>好，能打断颈椎</td>
+<td>最好（切割无效）</td>
+<td>需要近身，费力，会累</td>
+</tr>
+<tr>
+<td>刀刃（菜刀、猎刀）</td>
+<td>一般，容易卡骨</td>
+<td>差（滑）</td>
+<td>卡刀 = 失去武器</td>
+</tr>
+<tr>
+<td>长柄（长矛、拖把杆、晾衣杆）</td>
+<td>好，保距离</td>
+<td>一般</td>
+<td>需要双手，室内转身难</td>
+</tr>
+<tr>
+<td>弩/弓</td>
+<td>好，安静</td>
+<td>一般（需近距离）</td>
+<td>上弦慢，箭会丢</td>
+</tr>
+<tr>
+<td>手枪</td>
+<td>好</td>
+<td>一般（需连续命中）</td>
+<td>声音 = 招来更多，弹药贵</td>
+</tr>
+<tr>
+<td>霰弹枪</td>
+<td>很好（近距离）</td>
+<td>好</td>
+<td>声音极大，弹药极贵</td>
+</tr>
+<tr>
+<td>火</td>
+<td>会引燃建筑</td>
+<td>干壳极有效</td>
+<td>失控风险，烟，吸引</td>
+</tr>
+<tr>
+<td>陷阱（绊索、塌陷、堵门）</td>
+<td>好</td>
+<td>一般</td>
+<td>需要时间、材料、预先布置</td>
+</tr>
+<tr>
+<td>高处</td>
+<td>好（它们不会爬，除 Z-2b）</td>
+<td>好</td>
+<td>只能守，不能走</td>
+</tr>
+<tr>
+<td>车</td>
+<td>好（撞击、碾压）</td>
+<td>好</td>
+<td>声音、油耗、损坏</td>
+</tr>
+</tbody>
+</table>
+<p><strong>伤害与部位</strong>：见 <code>06_跑团规则/03_判定与战斗.md</code>。核心原则——<strong>打躯干是拖延，打头是解决，长柄是活命。</strong></p>
+<h2 id="_6">五、清理一栋楼的流程（实战清单）</h2>
+<ol>
+<li><strong>观察</strong>（10—30 分钟）：数窗户、看有没有晾着的衣服、听有没有持续的声音。</li>
+<li><strong>制造远端声源</strong>：手机闹钟、车载音响、敲水管。把楼里的引到别处，或者引到你要去的反方向。</li>
+<li><strong>从顶往下</strong>：先占楼梯间，堵住下行的门。往下清时它们上来会踩踏自己人。</li>
+<li><strong>两人一组</strong>：一人持长柄顶住，一人持钝器解决。别一个人进屋。</li>
+<li><strong>关门作业</strong>：每清一层，把防火门关上并做标记（粉笔、胶带、鞋带）。标记是给后来的人看的，也是给自己的退路。</li>
+<li><strong>处理尸体</strong>：破坏脑干。不要堆在楼道——气味会引来更多，也会让人生病。</li>
+<li><strong>留一个退路</strong>：窗户、消防梯、天台。永远知道第二个出口在哪。</li>
+</ol>
+<h2 id="gm">六、六种送命方式（GM 可以照这个制造压力）</h2>
+<ol>
+<li>在楼道里说话。</li>
+<li>用手电直射（光柱在雾里像灯塔）。</li>
+<li>打开一扇不知道后面有什么的门。</li>
+<li>背着太重的包跑。</li>
+<li>在夜里生火。</li>
+<li>相信一个刚认识的人。</li>
+</ol>
+</article><div class="pager"><a href="../02_丧尸/02_丧尸类型图鉴.html"><span class="lbl">← 上一篇</span>02_丧尸类型图鉴</a><a href="../03_角色/00_角色总索引.html" style="text-align:right"><span class="lbl">下一篇 →</span>00_角色总索引</a></div>
+</main>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

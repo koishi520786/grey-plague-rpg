@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>判定与战斗 · 灰疫之年 · 末日丧尸跑团库</title>
+<meta name="description" content="现代丧尸末日文字跑团知识库">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="in">
+  <button class="iconbtn menubtn" id="menuBtn">目录</button>
+  <a class="brand" href="../index.html">灰疫之年<em>·</em>跑团库</a>
+  <div class="tsearch"><input id="topSearch" placeholder="搜索全库，回车确认"></div>
+  <a class="iconbtn" href="../search.html">搜索</a>
+  <button class="iconbtn" id="themeBtn">明/暗</button>
+</div></header>
+<div class="layout">
+<aside id="sidebar"><div class="grp"><span>导航</span><a href="../index.html">首页</a><a href="../search.html">搜索</a></div>
+<div class="grp"><span>根目录</span>
+<a href="../00_GM启动提示词.html" title="00_GM启动提示词.md">00_GM启动提示词</a>
+<a href="../AI_START_HERE.html" title="AI_START_HERE.md">AI_START_HERE</a>
+<a href="../README.html" title="README.md">README</a>
+<a href="../本地存档模板.html" title="本地存档模板.md">本地存档模板</a>
+</div>
+<div class="grp"><span>01_世界观</span>
+<a href="../01_世界观/00_世界总索引.html" title="01_世界观/00_世界总索引.md">00_世界总索引</a>
+<a href="../01_世界观/01_灰疫病毒与爆发编年.html" title="01_世界观/01_灰疫病毒与爆发编年.md">01_灰疫病毒与爆发编年</a>
+<a href="../01_世界观/02_临江市地理与关键地点.html" title="01_世界观/02_临江市地理与关键地点.md">02_临江市地理与关键地点</a>
+<a href="../01_世界观/03_幸存者势力与组织.html" title="01_世界观/03_幸存者势力与组织.md">03_幸存者势力与组织</a>
+<a href="../01_世界观/04_气候季节与生存环境.html" title="01_世界观/04_气候季节与生存环境.md">04_气候季节与生存环境</a>
+<a href="../01_世界观/05_现实经济与物资流通.html" title="01_世界观/05_现实经济与物资流通.md">05_现实经济与物资流通</a>
+</div>
+<div class="grp"><span>02_丧尸</span>
+<a href="../02_丧尸/00_丧尸总索引.html" title="02_丧尸/00_丧尸总索引.md">00_丧尸总索引</a>
+<a href="../02_丧尸/01_感染机制与生理.html" title="02_丧尸/01_感染机制与生理.md">01_感染机制与生理</a>
+<a href="../02_丧尸/02_丧尸类型图鉴.html" title="02_丧尸/02_丧尸类型图鉴.md">02_丧尸类型图鉴</a>
+<a href="../02_丧尸/03_分布迁移与对抗.html" title="02_丧尸/03_分布迁移与对抗.md">03_分布迁移与对抗</a>
+</div>
+<div class="grp"><span>03_角色</span>
+<a href="../03_角色/00_角色总索引.html" title="03_角色/00_角色总索引.md">00_角色总索引</a>
+<a href="../03_角色/01_主角沈砚.html" title="03_角色/01_主角沈砚.md">01_主角沈砚</a>
+<a href="../03_角色/02_苏晞人物档案.html" title="03_角色/02_苏晞人物档案.md">02_苏晞人物档案</a>
+<a href="../03_角色/03_幸存者NPC.html" title="03_角色/03_幸存者NPC.md">03_幸存者NPC</a>
+<a href="../03_角色/04_重要NPC与潜在伙伴.html" title="03_角色/04_重要NPC与潜在伙伴.md">04_重要NPC与潜在伙伴</a>
+<a href="../03_角色/05_人物关系网与登场表.html" title="03_角色/05_人物关系网与登场表.md">05_人物关系网与登场表</a>
+</div>
+<div class="grp"><span>04_系统</span>
+<a href="../04_系统/00_系统总索引.html" title="04_系统/00_系统总索引.md">00_系统总索引</a>
+<a href="../04_系统/01_SP结算规则.html" title="04_系统/01_SP结算规则.md">01_SP结算规则</a>
+<a href="../04_系统/03_反刷与成长上限.html" title="04_系统/03_反刷与成长上限.md">03_反刷与成长上限</a>
+<a href="../04_系统/04_库存与物品管理.html" title="04_系统/04_库存与物品管理.md">04_库存与物品管理</a>
+</div>
+<div class="grp"><span>06_跑团规则</span>
+<a href="../06_跑团规则/00_规则总索引.html" title="06_跑团规则/00_规则总索引.md">00_规则总索引</a>
+<a href="../06_跑团规则/01_GM运行总则与玩家控制权.html" title="06_跑团规则/01_GM运行总则与玩家控制权.md">01_GM运行总则与玩家控制权</a>
+<a href="../06_跑团规则/02_叙事对话与苏晞演出.html" title="06_跑团规则/02_叙事对话与苏晞演出.md">02_叙事对话与苏晞演出</a>
+<a href="../06_跑团规则/03_判定与战斗.html" class="cur" title="06_跑团规则/03_判定与战斗.md">03_判定与战斗</a>
+<a href="../06_跑团规则/04_探索搜刮与交易.html" title="06_跑团规则/04_探索搜刮与交易.md">04_探索搜刮与交易</a>
+<a href="../06_跑团规则/05_生存状态与伤病.html" title="06_跑团规则/05_生存状态与伤病.md">05_生存状态与伤病</a>
+<a href="../06_跑团规则/06_剧情推进与GM工具箱.html" title="06_跑团规则/06_剧情推进与GM工具箱.md">06_剧情推进与GM工具箱</a>
+<a href="../06_跑团规则/07_时间推进与状态台账.html" title="06_跑团规则/07_时间推进与状态台账.md">07_时间推进与状态台账</a>
+</div>
+<div class="grp"><span>07_剧本</span>
+<a href="../07_剧本/00_开场与总纲.html" title="07_剧本/00_开场与总纲.md">00_开场与总纲</a>
+<a href="../07_剧本/01_第一章_断电之夜.html" title="07_剧本/01_第一章_断电之夜.md">01_第一章_断电之夜</a>
+<a href="../07_剧本/02_前十四天事件池.html" title="07_剧本/02_前十四天事件池.md">02_前十四天事件池</a>
+</div>
+<div class="grp"><span>08_索引</span>
+<a href="../08_索引/CHECK_REPORT.html" title="08_索引/CHECK_REPORT.md">CHECK_REPORT</a>
+<a href="../08_索引/COUNTS.html" title="08_索引/COUNTS.md">COUNTS</a>
+<a href="../08_索引/KEYWORD_INDEX.html" title="08_索引/KEYWORD_INDEX.md">KEYWORD_INDEX</a>
+<a href="../08_索引/MASTER_INDEX.html" title="08_索引/MASTER_INDEX.md">MASTER_INDEX</a>
+</div>
+<div class="grp"><span>交易系统</span>
+<a href="../交易系统/商品索引.html" title="交易系统/商品索引.md">商品索引</a>
+<a href="../交易系统/末日生存交易手册.html" title="交易系统/末日生存交易手册.md">末日生存交易手册</a>
+</div>
+<div class="grp"><span>研究资料</span>
+<a href="../研究资料/同类作品系统机制对比.html" title="研究资料/同类作品系统机制对比.md">同类作品系统机制对比</a>
+</div>
+<div class="grp"><span>系统设定</span>
+<a href="../系统设定/属性与技能.html" title="系统设定/属性与技能.md">属性与技能</a>
+<a href="../系统设定/经验与等级.html" title="系统设定/经验与等级.md">经验与等级</a>
+</div></aside>
+<main>
+<div class="crumb"><a href="../index.html">灰疫之年 · 末日丧尸跑团库</a> / 06_跑团规则</div><div class="docbar"><span>06_跑团规则/03_判定与战斗.md</span><span class="sp"></span><a href="https://github.com/koishi520786/grey-plague-rpg/blob/main/06_跑团规则/03_判定与战斗.md" target="_blank" rel="noopener">Markdown 原文 ↗</a><a href="../search.html?q=判定与战斗">全库搜索</a></div><article>
+<h1 id="_1">判定与战斗</h1>
+<h2 id="_2">一、核心判定</h2>
+<p><strong>掷 d100，小于等于判定值即成功。</strong></p>
+<pre><code>判定值 = 40 + (属性 − 10) × 4 + 技能等级 × 8 + 情境修正
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>例</th>
+<th>计算</th>
+<th>判定值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>沈砚用撬棍砸头（力量 12，格斗 0）</td>
+<td>40 + 8 + 0 − 25（打头）</td>
+<td>23</td>
+</tr>
+<tr>
+<td>沈砚用撬棍砸头（格斗练到 2）</td>
+<td>40 + 8 + 16 − 25</td>
+<td>39</td>
+</tr>
+<tr>
+<td>苏晞记路（感知 13，观察 1）</td>
+<td>40 + 12 + 8</td>
+<td>60</td>
+</tr>
+<tr>
+<td>沈砚修发电机（感知 10，机械 2）</td>
+<td>40 + 0 + 16</td>
+<td>56</td>
+</tr>
+<tr>
+<td>沈砚说服老陈（意志…此处用感知+交涉）</td>
+<td>40 + 0 + 0</td>
+<td>40（他不擅长）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>上下限</strong>：判定值最低 5，最高 95。掷出 01—05 永远成功（幸运），96—00 永远失败（意外）。</p>
+<h3 id="_3">成功度（可选，但战斗里要用）</h3>
+<table>
+<thead>
+<tr>
+<th>掷骰结果</th>
+<th>成功度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≤ 判定值 − 30</td>
+<td>大成功：+3 伤害 / 更快 / 更好</td>
+</tr>
+<tr>
+<td>≤ 判定值</td>
+<td>成功</td>
+</tr>
+<tr>
+<td>≤ 判定值 + 15</td>
+<td>失败但有代价（东西掉了、发出声音、多花时间）</td>
+</tr>
+<tr>
+<td>&gt; 判定值 + 15</td>
+<td>失败</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">二、对抗判定</h2>
+<p>攻击方判定值 <strong>减去</strong> 防守方闪避值，再掷骰。</p>
+<pre><code>防守闪避 = (敏捷 − 10) × 3 + 情境修正
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>目标</th>
+<th>闪避</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通人（敏捷 11）</td>
+<td>3</td>
+</tr>
+<tr>
+<td>训练有素者（敏捷 14）</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Z-1 / Z-4 / Z-5 / Z-6</td>
+<td>0（不闪避）</td>
+</tr>
+<tr>
+<td>Z-2 / Z-2b</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Z-3（已扑出后）</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_5">三、战斗流程</h2>
+<p><strong>一回合 ≈ 6 秒。每回合 2 个行动点。</strong></p>
+<table>
+<thead>
+<tr>
+<th>动作</th>
+<th>消耗</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>移动一个距离带</td>
+<td>1</td>
+<td>贴身↔近↔中↔远</td>
+</tr>
+<tr>
+<td>近战攻击</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>瞄准射击</td>
+<td>1 瞄准 + 1 射击</td>
+<td>不瞄准射击 -20</td>
+</tr>
+<tr>
+<td>换弹</td>
+<td>1</td>
+<td>手枪/步枪；霰弹枪逐发装填 = 每发 1 点</td>
+</tr>
+<tr>
+<td>起身 / 爬行</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>推倒 / 顶住</td>
+<td>1</td>
+<td>力量对抗</td>
+</tr>
+<tr>
+<td>说话（一句话）</td>
+<td>0</td>
+<td>但不能是长句</td>
+</tr>
+<tr>
+<td>掏东西 / 开锁 / 破门</td>
+<td>1—2</td>
+<td>视难度</td>
+</tr>
+</tbody>
+</table>
+<p><strong>先手</strong>：感知对抗（双方各掷，高者先）。被伏击时防守方第一回合不能行动。</p>
+<h3 id="_6">距离带</h3>
+<table>
+<thead>
+<tr>
+<th>带</th>
+<th>距离</th>
+<th>谁能打到</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>贴身</td>
+<td>0—1.5m</td>
+<td>近战全部；枪械 -10</td>
+</tr>
+<tr>
+<td>近</td>
+<td>1.5—5m</td>
+<td>长柄、投掷、枪械；短刀打不到</td>
+</tr>
+<tr>
+<td>中</td>
+<td>5—25m</td>
+<td>枪械、弓弩；投掷 -20</td>
+</tr>
+<tr>
+<td>远</td>
+<td>25m+</td>
+<td>枪械（-10/25m 递增）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_7">四、伤害</h2>
+<pre><code>伤害 = 武器伤害 + 力量修正 + 成功度加成 − 目标护甲
+力量修正 = (力量 − 10) ÷ 2（向下取整）
+</code></pre>
+<p><strong>部位</strong></p>
+<table>
+<thead>
+<tr>
+<th>部位</th>
+<th>修正</th>
+<th>效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>躯干</td>
+<td>0</td>
+<td>正常伤害</td>
+</tr>
+<tr>
+<td>头部</td>
+<td>−25</td>
+<td>伤害 ×2；对感染者见下</td>
+</tr>
+<tr>
+<td>四肢</td>
+<td>−10</td>
+<td>伤害 ×0.7；累积可致残</td>
+</tr>
+<tr>
+<td>手/眼（极难）</td>
+<td>−35</td>
+<td>特殊效果（打掉武器、致盲）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>感染者的"停止"判定</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>头部命中且最终伤害 ≥</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Z-1 / Z-1b / Z-1c / Z-3</td>
+<td>8</td>
+<td>立即停止</td>
+</tr>
+<tr>
+<td>Z-2 / Z-2b / Z-4 / Z-6</td>
+<td>10</td>
+<td>立即停止</td>
+</tr>
+<tr>
+<td>Z-5 / Z-5b</td>
+<td>20</td>
+<td>立即停止（普通刀斧达不到，需钝器重击/枪械/弩）</td>
+</tr>
+</tbody>
+</table>
+<p>未达阈值：造成伤害，但没停。躯干累计伤害 ≥ 结构值 → 倒地（丧失追击，仍会抓咬）。<strong>打断颈椎</strong>（力量对抗成功 + 钝器）：倒地且无法追击，但不结算 SP（未停止）。</p>
+<h2 id="_8">五、感染者的攻击</h2>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>判定值</th>
+<th>命中后</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Z-1</td>
+<td>35</td>
+<td>抓 3 / 咬 9</td>
+</tr>
+<tr>
+<td>Z-2</td>
+<td>50</td>
+<td>抓 5 / 咬 11</td>
+</tr>
+<tr>
+<td>Z-3</td>
+<td>60（首次扑击）/ 35</td>
+<td>扑倒 6 / 咬 10</td>
+</tr>
+<tr>
+<td>Z-4</td>
+<td>30</td>
+<td>抓 4 / 咬 8</td>
+</tr>
+<tr>
+<td>Z-5</td>
+<td>45</td>
+<td>抓 6 / 咬 12</td>
+</tr>
+<tr>
+<td>Z-6</td>
+<td>20</td>
+<td>抓 4 / 咬 9</td>
+</tr>
+<tr>
+<td>Z-1b</td>
+<td>40</td>
+<td>咬 8</td>
+</tr>
+<tr>
+<td>Z-1c</td>
+<td>30</td>
+<td>抓 4 / 咬 9</td>
+</tr>
+<tr>
+<td>Z-2b</td>
+<td>48</td>
+<td>抓 5 / 咬 11</td>
+</tr>
+<tr>
+<td>Z-5b</td>
+<td>40</td>
+<td>抓 5 / 咬 10</td>
+</tr>
+</tbody>
+</table>
+<p><strong>命中后立刻做感染判定</strong>（见第六节）。</p>
+<h2 id="_9">六、感染判定（咬伤/抓伤后立即）</h2>
+<p>掷 d100，<strong>小于等于感染率即感染</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>情形</th>
+<th>基础感染率</th>
+<th>可降低到</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>深咬（见血，&gt;5mm）</td>
+<td>62</td>
+<td>冲洗（10 分钟内）−15｜碘伏消毒 −10｜扩创 −10 → <strong>最低 27</strong></td>
+</tr>
+<tr>
+<td>浅咬（破皮未出血）</td>
+<td>34</td>
+<td>同上 → 最低 9</td>
+</tr>
+<tr>
+<td>抓伤破皮</td>
+<td>18</td>
+<td>同上 → 最低 3</td>
+</tr>
+<tr>
+<td>体液入眼/入口</td>
+<td>12</td>
+<td>只能大量清水冲洗 −5</td>
+</tr>
+<tr>
+<td>Z-4 破裂喷溅（有伤口）</td>
+<td>25</td>
+<td>冲洗 −10</td>
+</tr>
+<tr>
+<td>抗病毒血清（30 分钟内）</td>
+<td>固定 8</td>
+<td>无法再降低</td>
+</tr>
+</tbody>
+</table>
+<p><strong>重要</strong>：这些修正<strong>全部需要时间</strong>。冲洗 5 分钟、消毒 2 分钟、扩创 10 分钟。在尸群中间做这些事，等于自杀。<strong>这就是最残酷的取舍点。</strong></p>
+<h2 id="_10">七、群体</h2>
+<table>
+<thead>
+<tr>
+<th>规模</th>
+<th>数量</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单个</td>
+<td>1—2</td>
+<td>正常战斗</td>
+</tr>
+<tr>
+<td>群</td>
+<td>3—8</td>
+<td>每回合最多 2 只实际攻击（受通道限制），其余互相挤压；每回合玩家做一次敏捷判定，失败则被"围住"（无法后退，所有判定 −10）</td>
+</tr>
+<tr>
+<td>潮</td>
+<td>9+</td>
+<td>不能打。只能跑、堵门、上楼、上车。<strong>GM 不许让玩家"清潮"。</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>群的移动速度 = 最慢的那只。</strong> 这是玩家唯一的结构性优势。</p>
+<h2 id="_11">八、逃跑</h2>
+<p>掷敏捷对抗：</p>
+<table>
+<thead>
+<tr>
+<th>追击者</th>
+<th>玩家需要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Z-1 / Z-4 / Z-5 / Z-6</td>
+<td>自动成功（除非被围、负重 &gt;80%、或腿伤）</td>
+</tr>
+<tr>
+<td>Z-2 / Z-2b</td>
+<td>判定值 −10；失败则被扑倒一次</td>
+</tr>
+<tr>
+<td>人（成年男性）</td>
+<td>正常对抗；对方有枪则另算</td>
+</tr>
+</tbody>
+</table>
+<p><strong>逃跑会掉东西</strong>：每逃一次，掷 d100，≤25 掉一件（GM 选最合理的：手电、水壶、一只鞋）。</p>
+<h2 id="_12">九、其他常见判定（速查）</h2>
+<table>
+<thead>
+<tr>
+<th>行为</th>
+<th>属性 + 技能</th>
+<th>难度修正</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>撬门</td>
+<td>力量 + 机械</td>
+<td>木门 0 / 防盗门 −25 / 有撬棍 +15</td>
+</tr>
+<tr>
+<td>静音开门</td>
+<td>敏捷 + 潜行</td>
+<td>老门 −10 / 上油 +10</td>
+</tr>
+<tr>
+<td>潜行穿过走廊</td>
+<td>敏捷 + 潜行</td>
+<td>有碎玻璃 −20 / 黑暗 +10（对丧尸而言黑暗无用，它们靠听）</td>
+</tr>
+<tr>
+<td>听声辨位</td>
+<td>感知 + 观察</td>
+<td>隔一层楼 −15</td>
+</tr>
+<tr>
+<td>搜刮快速翻找</td>
+<td>感知 + 观察</td>
+<td>每 10 分钟一次</td>
+</tr>
+<tr>
+<td>急救止血</td>
+<td>感知 + 医疗</td>
+<td>大出血 −15 / 有急救包 +10</td>
+</tr>
+<tr>
+<td>说服</td>
+<td>感知 + 交涉</td>
+<td>对方有戒心 −15 / 有他想要的东西 +20</td>
+</tr>
+<tr>
+<td>识破谎言</td>
+<td>感知 + 观察</td>
+<td>对方是老手 −20</td>
+</tr>
+<tr>
+<td>修发动机</td>
+<td>感知 + 机械</td>
+<td>缺零件 −25</td>
+</tr>
+<tr>
+<td>开车脱困</td>
+<td>敏捷 + 驾驶</td>
+<td>路上有尸群 −20</td>
+</tr>
+<tr>
+<td>扛人跑</td>
+<td>力量 + 体质</td>
+<td>每 100 米一次判定，失败则体力 −1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_13">十、倒下与死亡</h2>
+<p>生命值 ≤ 0 → <strong>倒下</strong>，不是立刻死。</p>
+<ul>
+<li>倒下后 1—3 轮内意识清醒：能说话、能做一个动作（递东西、按按钮、扣扳机）。</li>
+<li>每轮掷 d100 ≤ 体质 × 3 则稳定，否则失去 1 点生命并继续流血。</li>
+<li>无人处理且持续失血 → 3 轮后死亡。</li>
+<li>死亡后 3—30 分钟，若脑部完好且体内有病毒 → 复苏。</li>
+</ul>
+<p><strong>这一条要真的用。</strong> 倒下那 1—3 轮，往往是整个跑团最有分量的三句话。</p>
+</article><div class="pager"><a href="../06_跑团规则/02_叙事对话与苏晞演出.html"><span class="lbl">← 上一篇</span>02_叙事对话与苏晞演出</a><a href="../06_跑团规则/04_探索搜刮与交易.html" style="text-align:right"><span class="lbl">下一篇 →</span>04_探索搜刮与交易</a></div>
+</main>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

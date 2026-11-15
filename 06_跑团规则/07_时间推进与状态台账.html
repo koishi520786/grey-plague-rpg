@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>时间推进与状态台账 · 灰疫之年 · 末日丧尸跑团库</title>
+<meta name="description" content="现代丧尸末日文字跑团知识库">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="in">
+  <button class="iconbtn menubtn" id="menuBtn">目录</button>
+  <a class="brand" href="../index.html">灰疫之年<em>·</em>跑团库</a>
+  <div class="tsearch"><input id="topSearch" placeholder="搜索全库，回车确认"></div>
+  <a class="iconbtn" href="../search.html">搜索</a>
+  <button class="iconbtn" id="themeBtn">明/暗</button>
+</div></header>
+<div class="layout">
+<aside id="sidebar"><div class="grp"><span>导航</span><a href="../index.html">首页</a><a href="../search.html">搜索</a></div>
+<div class="grp"><span>根目录</span>
+<a href="../00_GM启动提示词.html" title="00_GM启动提示词.md">00_GM启动提示词</a>
+<a href="../AI_START_HERE.html" title="AI_START_HERE.md">AI_START_HERE</a>
+<a href="../README.html" title="README.md">README</a>
+<a href="../本地存档模板.html" title="本地存档模板.md">本地存档模板</a>
+</div>
+<div class="grp"><span>01_世界观</span>
+<a href="../01_世界观/00_世界总索引.html" title="01_世界观/00_世界总索引.md">00_世界总索引</a>
+<a href="../01_世界观/01_灰疫病毒与爆发编年.html" title="01_世界观/01_灰疫病毒与爆发编年.md">01_灰疫病毒与爆发编年</a>
+<a href="../01_世界观/02_临江市地理与关键地点.html" title="01_世界观/02_临江市地理与关键地点.md">02_临江市地理与关键地点</a>
+<a href="../01_世界观/03_幸存者势力与组织.html" title="01_世界观/03_幸存者势力与组织.md">03_幸存者势力与组织</a>
+<a href="../01_世界观/04_气候季节与生存环境.html" title="01_世界观/04_气候季节与生存环境.md">04_气候季节与生存环境</a>
+<a href="../01_世界观/05_现实经济与物资流通.html" title="01_世界观/05_现实经济与物资流通.md">05_现实经济与物资流通</a>
+</div>
+<div class="grp"><span>02_丧尸</span>
+<a href="../02_丧尸/00_丧尸总索引.html" title="02_丧尸/00_丧尸总索引.md">00_丧尸总索引</a>
+<a href="../02_丧尸/01_感染机制与生理.html" title="02_丧尸/01_感染机制与生理.md">01_感染机制与生理</a>
+<a href="../02_丧尸/02_丧尸类型图鉴.html" title="02_丧尸/02_丧尸类型图鉴.md">02_丧尸类型图鉴</a>
+<a href="../02_丧尸/03_分布迁移与对抗.html" title="02_丧尸/03_分布迁移与对抗.md">03_分布迁移与对抗</a>
+</div>
+<div class="grp"><span>03_角色</span>
+<a href="../03_角色/00_角色总索引.html" title="03_角色/00_角色总索引.md">00_角色总索引</a>
+<a href="../03_角色/01_主角沈砚.html" title="03_角色/01_主角沈砚.md">01_主角沈砚</a>
+<a href="../03_角色/02_苏晞人物档案.html" title="03_角色/02_苏晞人物档案.md">02_苏晞人物档案</a>
+<a href="../03_角色/03_幸存者NPC.html" title="03_角色/03_幸存者NPC.md">03_幸存者NPC</a>
+<a href="../03_角色/04_重要NPC与潜在伙伴.html" title="03_角色/04_重要NPC与潜在伙伴.md">04_重要NPC与潜在伙伴</a>
+<a href="../03_角色/05_人物关系网与登场表.html" title="03_角色/05_人物关系网与登场表.md">05_人物关系网与登场表</a>
+</div>
+<div class="grp"><span>04_系统</span>
+<a href="../04_系统/00_系统总索引.html" title="04_系统/00_系统总索引.md">00_系统总索引</a>
+<a href="../04_系统/01_SP结算规则.html" title="04_系统/01_SP结算规则.md">01_SP结算规则</a>
+<a href="../04_系统/03_反刷与成长上限.html" title="04_系统/03_反刷与成长上限.md">03_反刷与成长上限</a>
+<a href="../04_系统/04_库存与物品管理.html" title="04_系统/04_库存与物品管理.md">04_库存与物品管理</a>
+</div>
+<div class="grp"><span>06_跑团规则</span>
+<a href="../06_跑团规则/00_规则总索引.html" title="06_跑团规则/00_规则总索引.md">00_规则总索引</a>
+<a href="../06_跑团规则/01_GM运行总则与玩家控制权.html" title="06_跑团规则/01_GM运行总则与玩家控制权.md">01_GM运行总则与玩家控制权</a>
+<a href="../06_跑团规则/02_叙事对话与苏晞演出.html" title="06_跑团规则/02_叙事对话与苏晞演出.md">02_叙事对话与苏晞演出</a>
+<a href="../06_跑团规则/03_判定与战斗.html" title="06_跑团规则/03_判定与战斗.md">03_判定与战斗</a>
+<a href="../06_跑团规则/04_探索搜刮与交易.html" title="06_跑团规则/04_探索搜刮与交易.md">04_探索搜刮与交易</a>
+<a href="../06_跑团规则/05_生存状态与伤病.html" title="06_跑团规则/05_生存状态与伤病.md">05_生存状态与伤病</a>
+<a href="../06_跑团规则/06_剧情推进与GM工具箱.html" title="06_跑团规则/06_剧情推进与GM工具箱.md">06_剧情推进与GM工具箱</a>
+<a href="../06_跑团规则/07_时间推进与状态台账.html" class="cur" title="06_跑团规则/07_时间推进与状态台账.md">07_时间推进与状态台账</a>
+</div>
+<div class="grp"><span>07_剧本</span>
+<a href="../07_剧本/00_开场与总纲.html" title="07_剧本/00_开场与总纲.md">00_开场与总纲</a>
+<a href="../07_剧本/01_第一章_断电之夜.html" title="07_剧本/01_第一章_断电之夜.md">01_第一章_断电之夜</a>
+<a href="../07_剧本/02_前十四天事件池.html" title="07_剧本/02_前十四天事件池.md">02_前十四天事件池</a>
+</div>
+<div class="grp"><span>08_索引</span>
+<a href="../08_索引/CHECK_REPORT.html" title="08_索引/CHECK_REPORT.md">CHECK_REPORT</a>
+<a href="../08_索引/COUNTS.html" title="08_索引/COUNTS.md">COUNTS</a>
+<a href="../08_索引/KEYWORD_INDEX.html" title="08_索引/KEYWORD_INDEX.md">KEYWORD_INDEX</a>
+<a href="../08_索引/MASTER_INDEX.html" title="08_索引/MASTER_INDEX.md">MASTER_INDEX</a>
+</div>
+<div class="grp"><span>交易系统</span>
+<a href="../交易系统/商品索引.html" title="交易系统/商品索引.md">商品索引</a>
+<a href="../交易系统/末日生存交易手册.html" title="交易系统/末日生存交易手册.md">末日生存交易手册</a>
+</div>
+<div class="grp"><span>研究资料</span>
+<a href="../研究资料/同类作品系统机制对比.html" title="研究资料/同类作品系统机制对比.md">同类作品系统机制对比</a>
+</div>
+<div class="grp"><span>系统设定</span>
+<a href="../系统设定/属性与技能.html" title="系统设定/属性与技能.md">属性与技能</a>
+<a href="../系统设定/经验与等级.html" title="系统设定/经验与等级.md">经验与等级</a>
+</div></aside>
+<main>
+<div class="crumb"><a href="../index.html">灰疫之年 · 末日丧尸跑团库</a> / 06_跑团规则</div><div class="docbar"><span>06_跑团规则/07_时间推进与状态台账.md</span><span class="sp"></span><a href="https://github.com/koishi520786/grey-plague-rpg/blob/main/06_跑团规则/07_时间推进与状态台账.md" target="_blank" rel="noopener">Markdown 原文 ↗</a><a href="../search.html?q=时间推进与状态台账">全库搜索</a></div><article>
+<h1 id="_1">时间推进与状态台账</h1>
+<h2 id="_2">一、时间单位</h2>
+<table>
+<thead>
+<tr>
+<th>单位</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>轮（6 秒）</td>
+<td>战斗</td>
+</tr>
+<tr>
+<td>分钟</td>
+<td>搜刮、包扎、对话</td>
+</tr>
+<tr>
+<td>小时</td>
+<td>赶路、休息、放哨</td>
+</tr>
+<tr>
+<td>半天</td>
+<td>一次外出行动</td>
+</tr>
+<tr>
+<td>天</td>
+<td>消耗结算（食物、水、疲劳、伤口）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>默认时间流速</strong>：一轮对话 = 3—10 分钟；一次搜刮 = 20—60 分钟；一次穿城 = 2—4 小时。</p>
+<h2 id="11">二、每天的时间结构（11 月）</h2>
+<table>
+<thead>
+<tr>
+<th>时段</th>
+<th>时间</th>
+<th>能做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>夜</td>
+<td>17:30—05:30</td>
+<td>只能待在有门的地方；放哨；修理；说话</td>
+</tr>
+<tr>
+<td>拂晓</td>
+<td>05:30—06:50</td>
+<td>潜行移动最佳窗口</td>
+</tr>
+<tr>
+<td>上午</td>
+<td>06:50—11:00</td>
+<td>主力行动时段</td>
+</tr>
+<tr>
+<td>正午</td>
+<td>11:00—14:00</td>
+<td>最安全（温度最高、光最好）</td>
+</tr>
+<tr>
+<td>下午</td>
+<td>14:00—16:30</td>
+<td>行动，但必须在 16:00 前决定在哪过夜</td>
+</tr>
+<tr>
+<td>黄昏</td>
+<td>16:30—17:30</td>
+<td>最危险，不要在街上</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">三、状态什么时候报</h2>
+<p><strong>默认不报。</strong> 日常对话、做饭、分配东西——不报数字。</p>
+<p><strong>只在三种情况下报（每次只报变化的那几项，一两行）：</strong></p>
+<ol>
+<li><strong>数值跨级</strong>（口渴 1→2、疲劳 2→3、伤口从"红"变"化脓"）。</li>
+<li><strong>物资有明显变化</strong>（水剩 1 瓶、弹药剩 3 发、SP 到账）。</li>
+<li><strong>玩家主动问</strong>（"我还剩多少水？"）。</li>
+</ol>
+<p>格式（简短，不用表格）：</p>
+<pre><code>—— 11/14 09:20 · 口渴 2 · 疲劳 2 · 水剩 1 瓶 · 左手掌划伤（已包扎）
+</code></pre>
+<p><strong>禁止</strong>：每轮末尾贴完整状态表、贴属性条、贴经验条。</p>
+<h2 id="_4">四、台账模板（存档用，放库外的本地文件）</h2>
+<pre><code class="language-markdown"># 末日丧尸 · 本地存档
+
+## 当前
+日期：2026-11-13（D+7）  时间：06:40  天气：雾
+地点：幸福里 3 号楼 502 室
+
+## 沈砚
+生命 48/48 ｜ 体力 10/10 ｜ 疲劳 1 ｜ 饥饿 1 ｜ 口渴 1 ｜ 体温 0 ｜ 睡眠 OK
+等级 1 ｜ EXP 0/40 ｜ SP 0
+属性：力 12 敏 11 体 12 感 10 意 11
+技能：机械 2 电工 1 驾驶 1 潜行 1
+状态：无伤
+
+## 苏晞
+生命 32/32 ｜ 体力 8/10 ｜ 疲劳 1 ｜ 饥饿 1 ｜ 口渴 1 ｜ 体温 0
+属性：力 6 敏 12 体 8 感 13 意 9
+技能：缝纫 1 烹饪 1 潜行 1 观察 1 交涉 1
+状态：左膝旧淤青
+
+## 库存（见 04_系统/04_库存与物品管理.md 格式）
+
+## 关系
+苏晞 +3（默认）｜ 其他人 —
+
+## 已发生
+- 11/13 06:40 开局
+
+## 待办与悬置
+- 老周下落（三条线索未查）
+- 秦小雨在 2 号楼（未接触）
+- 楼下白色两厢车喇叭在响
+</code></pre>
+<h2 id="60">五、日结清单（每过一天做一次，60 秒）</h2>
+<ol>
+<li>食物 −1 天份（两人）；水 −4L。</li>
+<li>饥饿 +1（若不足 800 千卡/人）、口渴 +1（若不足 2L/人）。</li>
+<li>疲劳：睡够 → 归 0；没睡好 → 保留。</li>
+<li>伤口：按时间推进感染阶段。</li>
+<li>体温：按天气与衣物。</li>
+<li>SP / EXP：只在有结算时变化。</li>
+<li>世界：势力在做什么（按 <code>03_角色/05_人物关系网与登场表.md</code>）。</li>
+<li>写一句"今天发生了什么"进存档。</li>
+</ol>
+<h2 id="_5">六、跳天规则</h2>
+<p>玩家说"睡到天亮""等到天黑""过两天"时：</p>
+<ol>
+<li><strong>先问条件</strong>：有地方睡吗？有人守吗？有吃的吗？（不是问玩家，是 GM 自己判断）</li>
+<li><strong>掷一次事件</strong>（d100，≤25 有夜间事件：敲门、玻璃碎、远处枪声、狗叫、发烧）。</li>
+<li><strong>结算消耗</strong>（日结清单）。</li>
+<li><strong>给一段"醒来"的画面</strong>（不是总结）。</li>
+<li>不要一次跳超过 3 天；超过就拆成几次，中间要有戏。</li>
+</ol>
+<h2 id="30">七、长期推进（每 30 天）</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>季节</td>
+<td>推进一档（见 <code>01_世界观/04</code>）</td>
+</tr>
+<tr>
+<td>感染者</td>
+<td>全局活跃数 ×0.93^周数</td>
+</tr>
+<tr>
+<td>势力</td>
+<td>至少一个势力发生结构性变化（换了头、搬了家、被灭了、合并了）</td>
+</tr>
+<tr>
+<td>NPC</td>
+<td>至少一个 NPC 死、走、或者变</td>
+</tr>
+<tr>
+<td>苏晞</td>
+<td>一项技能 +1（需合理剧情），或者一次态度转折</td>
+</tr>
+<tr>
+<td>系统</td>
+<td>等级上限不变，但可解锁更高阶条目（按等级）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5">八、连贯性检查（每 5 次回复自查一次）</h2>
+<ul>
+<li>[ ] 现在几点？天黑了没有？</li>
+<li>[ ] 上一次吃饭/喝水是什么时候？</li>
+<li>[ ] 伤口处理了吗？</li>
+<li>[ ] SP 余额对不对？</li>
+<li>[ ] 苏晞在哪？她在做什么？</li>
+<li>[ ] 有没有 NPC 说了他不该知道的事？</li>
+<li>[ ] 有没有"刚好"的巧合？</li>
+</ul>
+</article><div class="pager"><a href="../06_跑团规则/06_剧情推进与GM工具箱.html"><span class="lbl">← 上一篇</span>06_剧情推进与GM工具箱</a><a href="../07_剧本/00_开场与总纲.html" style="text-align:right"><span class="lbl">下一篇 →</span>00_开场与总纲</a></div>
+</main>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

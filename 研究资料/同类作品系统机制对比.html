@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>同类作品系统机制对比 · 灰疫之年 · 末日丧尸跑团库</title>
+<meta name="description" content="现代丧尸末日文字跑团知识库">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="in">
+  <button class="iconbtn menubtn" id="menuBtn">目录</button>
+  <a class="brand" href="../index.html">灰疫之年<em>·</em>跑团库</a>
+  <div class="tsearch"><input id="topSearch" placeholder="搜索全库，回车确认"></div>
+  <a class="iconbtn" href="../search.html">搜索</a>
+  <button class="iconbtn" id="themeBtn">明/暗</button>
+</div></header>
+<div class="layout">
+<aside id="sidebar"><div class="grp"><span>导航</span><a href="../index.html">首页</a><a href="../search.html">搜索</a></div>
+<div class="grp"><span>根目录</span>
+<a href="../00_GM启动提示词.html" title="00_GM启动提示词.md">00_GM启动提示词</a>
+<a href="../AI_START_HERE.html" title="AI_START_HERE.md">AI_START_HERE</a>
+<a href="../README.html" title="README.md">README</a>
+<a href="../本地存档模板.html" title="本地存档模板.md">本地存档模板</a>
+</div>
+<div class="grp"><span>01_世界观</span>
+<a href="../01_世界观/00_世界总索引.html" title="01_世界观/00_世界总索引.md">00_世界总索引</a>
+<a href="../01_世界观/01_灰疫病毒与爆发编年.html" title="01_世界观/01_灰疫病毒与爆发编年.md">01_灰疫病毒与爆发编年</a>
+<a href="../01_世界观/02_临江市地理与关键地点.html" title="01_世界观/02_临江市地理与关键地点.md">02_临江市地理与关键地点</a>
+<a href="../01_世界观/03_幸存者势力与组织.html" title="01_世界观/03_幸存者势力与组织.md">03_幸存者势力与组织</a>
+<a href="../01_世界观/04_气候季节与生存环境.html" title="01_世界观/04_气候季节与生存环境.md">04_气候季节与生存环境</a>
+<a href="../01_世界观/05_现实经济与物资流通.html" title="01_世界观/05_现实经济与物资流通.md">05_现实经济与物资流通</a>
+</div>
+<div class="grp"><span>02_丧尸</span>
+<a href="../02_丧尸/00_丧尸总索引.html" title="02_丧尸/00_丧尸总索引.md">00_丧尸总索引</a>
+<a href="../02_丧尸/01_感染机制与生理.html" title="02_丧尸/01_感染机制与生理.md">01_感染机制与生理</a>
+<a href="../02_丧尸/02_丧尸类型图鉴.html" title="02_丧尸/02_丧尸类型图鉴.md">02_丧尸类型图鉴</a>
+<a href="../02_丧尸/03_分布迁移与对抗.html" title="02_丧尸/03_分布迁移与对抗.md">03_分布迁移与对抗</a>
+</div>
+<div class="grp"><span>03_角色</span>
+<a href="../03_角色/00_角色总索引.html" title="03_角色/00_角色总索引.md">00_角色总索引</a>
+<a href="../03_角色/01_主角沈砚.html" title="03_角色/01_主角沈砚.md">01_主角沈砚</a>
+<a href="../03_角色/02_苏晞人物档案.html" title="03_角色/02_苏晞人物档案.md">02_苏晞人物档案</a>
+<a href="../03_角色/03_幸存者NPC.html" title="03_角色/03_幸存者NPC.md">03_幸存者NPC</a>
+<a href="../03_角色/04_重要NPC与潜在伙伴.html" title="03_角色/04_重要NPC与潜在伙伴.md">04_重要NPC与潜在伙伴</a>
+<a href="../03_角色/05_人物关系网与登场表.html" title="03_角色/05_人物关系网与登场表.md">05_人物关系网与登场表</a>
+</div>
+<div class="grp"><span>04_系统</span>
+<a href="../04_系统/00_系统总索引.html" title="04_系统/00_系统总索引.md">00_系统总索引</a>
+<a href="../04_系统/01_SP结算规则.html" title="04_系统/01_SP结算规则.md">01_SP结算规则</a>
+<a href="../04_系统/03_反刷与成长上限.html" title="04_系统/03_反刷与成长上限.md">03_反刷与成长上限</a>
+<a href="../04_系统/04_库存与物品管理.html" title="04_系统/04_库存与物品管理.md">04_库存与物品管理</a>
+</div>
+<div class="grp"><span>06_跑团规则</span>
+<a href="../06_跑团规则/00_规则总索引.html" title="06_跑团规则/00_规则总索引.md">00_规则总索引</a>
+<a href="../06_跑团规则/01_GM运行总则与玩家控制权.html" title="06_跑团规则/01_GM运行总则与玩家控制权.md">01_GM运行总则与玩家控制权</a>
+<a href="../06_跑团规则/02_叙事对话与苏晞演出.html" title="06_跑团规则/02_叙事对话与苏晞演出.md">02_叙事对话与苏晞演出</a>
+<a href="../06_跑团规则/03_判定与战斗.html" title="06_跑团规则/03_判定与战斗.md">03_判定与战斗</a>
+<a href="../06_跑团规则/04_探索搜刮与交易.html" title="06_跑团规则/04_探索搜刮与交易.md">04_探索搜刮与交易</a>
+<a href="../06_跑团规则/05_生存状态与伤病.html" title="06_跑团规则/05_生存状态与伤病.md">05_生存状态与伤病</a>
+<a href="../06_跑团规则/06_剧情推进与GM工具箱.html" title="06_跑团规则/06_剧情推进与GM工具箱.md">06_剧情推进与GM工具箱</a>
+<a href="../06_跑团规则/07_时间推进与状态台账.html" title="06_跑团规则/07_时间推进与状态台账.md">07_时间推进与状态台账</a>
+</div>
+<div class="grp"><span>07_剧本</span>
+<a href="../07_剧本/00_开场与总纲.html" title="07_剧本/00_开场与总纲.md">00_开场与总纲</a>
+<a href="../07_剧本/01_第一章_断电之夜.html" title="07_剧本/01_第一章_断电之夜.md">01_第一章_断电之夜</a>
+<a href="../07_剧本/02_前十四天事件池.html" title="07_剧本/02_前十四天事件池.md">02_前十四天事件池</a>
+</div>
+<div class="grp"><span>08_索引</span>
+<a href="../08_索引/CHECK_REPORT.html" title="08_索引/CHECK_REPORT.md">CHECK_REPORT</a>
+<a href="../08_索引/COUNTS.html" title="08_索引/COUNTS.md">COUNTS</a>
+<a href="../08_索引/KEYWORD_INDEX.html" title="08_索引/KEYWORD_INDEX.md">KEYWORD_INDEX</a>
+<a href="../08_索引/MASTER_INDEX.html" title="08_索引/MASTER_INDEX.md">MASTER_INDEX</a>
+</div>
+<div class="grp"><span>交易系统</span>
+<a href="../交易系统/商品索引.html" title="交易系统/商品索引.md">商品索引</a>
+<a href="../交易系统/末日生存交易手册.html" title="交易系统/末日生存交易手册.md">末日生存交易手册</a>
+</div>
+<div class="grp"><span>研究资料</span>
+<a href="../研究资料/同类作品系统机制对比.html" class="cur" title="研究资料/同类作品系统机制对比.md">同类作品系统机制对比</a>
+</div>
+<div class="grp"><span>系统设定</span>
+<a href="../系统设定/属性与技能.html" title="系统设定/属性与技能.md">属性与技能</a>
+<a href="../系统设定/经验与等级.html" title="系统设定/经验与等级.md">经验与等级</a>
+</div></aside>
+<main>
+<div class="crumb"><a href="../index.html">灰疫之年 · 末日丧尸跑团库</a> / 研究资料</div><div class="docbar"><span>研究资料/同类作品系统机制对比.md</span><span class="sp"></span><a href="https://github.com/koishi520786/grey-plague-rpg/blob/main/研究资料/同类作品系统机制对比.md" target="_blank" rel="noopener">Markdown 原文 ↗</a><a href="../search.html?q=同类作品系统机制对比">全库搜索</a></div><article>
+<h1 id="_1">同类作品系统机制对比</h1>
+<blockquote>
+<p><strong>用途</strong>：只作设计参照，不作本项目设定。
+<strong>证据分级</strong>（全文遵守）：
+- <strong>【原文】</strong>：直接读到作品正文片段，可引用具体数字与系统提示文本。
+- <strong>【二手】</strong>：来自作品页面的简介/问答/百科式综述，可能是平台自动生成，未核对正文。
+- <strong>【未确认】</strong>：搜索到书名或连载页，但没读到可支撑具体规则的文字。</p>
+<p>检索时间：2026-11-16。作品连载中，后续章节内容可能与本记录不一致。</p>
+</blockquote>
+<hr />
+<h2 id="_2">一、《末日求生：我有系统商城》（作者：寒渡鸦，纵横中文网，连载中）</h2>
+<p><strong>证据等级：原文</strong>（第 1 章《系统商城》正文片段，纵横书籍页 2026-11-15 可读）</p>
+<h3 id="_3">可确认的原文事实</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>原文信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>丧尸分级</td>
+<td>有"阶 + 级"两级记号，出现的是「一阶一级丧尸」</td>
+</tr>
+<tr>
+<td>击杀奖励</td>
+<td>【击杀一阶一级丧尸，获得 1.00 系统币】——基准怪 = <strong>1.00 系统币</strong>，带两位小数</td>
+</tr>
+<tr>
+<td>奖励随等级</td>
+<td>系统自述：「击杀丧尸按等级折算系统币。一阶一级丧尸基准掉落 1.00 系统币，等级越高，掉落越多。宿主升级系统后，折算率同步提升。」</td>
+</tr>
+<tr>
+<td>商城规模</td>
+<td>「商城全品类开放。价格随等级、品质浮动。」——<strong>开局即全品类</strong>，不做品类锁</td>
+</tr>
+<tr>
+<td>食物价格</td>
+<td>压缩饼干（1 份）= <strong>1.00 系统币</strong>（与一只基准丧尸等值）</td>
+</tr>
+<tr>
+<td>饮水价格</td>
+<td>干净水 1 瓶 = <strong>15 系统币</strong></td>
+</tr>
+<tr>
+<td>药品价格</td>
+<td>消炎药 1 盒 = <strong>80 系统币</strong></td>
+</tr>
+<tr>
+<td>武器价格</td>
+<td>「一把像样的短刀」= <strong>300 系统币</strong>；主角自评"100 币在这儿，跟揣着十块钱逛商场差不多"</td>
+</tr>
+<tr>
+<td>升级而非重买</td>
+<td>杀猪刀（残破）→ 完好 = <strong>50.00 系统币</strong>；「买把新的完好的要一百多，升级只要 50」；下一档 = 100</td>
+</tr>
+<tr>
+<td>新手礼包</td>
+<td>【检测到宿主处于危险环境，自动发放新手求生大礼包】= 100 系统币 + 破旧小屋 + 滑板车 + 杀猪刀（残破·卷刃·带豁口）</td>
+</tr>
+<tr>
+<td>系统位阶</td>
+<td>世界设定里"系统"是人人皆有的低配玩意（只能对个话、递个东西），主角这个是<strong>升级版</strong></td>
+</tr>
+<tr>
+<td>生存压力手段</td>
+<td>水 15 币/瓶，而基准怪只给 1 币 → 早期喝水就是奢侈品；新手礼包给的是"残破"装备，要花币修</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">可提炼的结构</h3>
+<ol>
+<li><strong>单价锚定最便宜的食物</strong>：1 币 = 一份压缩饼干。这条锚让玩家天然理解"一只怪 = 一顿"。</li>
+<li><strong>饮水刻意贵 15 倍</strong>：把最刚需的东西定成奢侈品，逼玩家去现实世界找水。</li>
+<li><strong>升级价 &lt; 新买价的一半</strong>：鼓励"养成手里的东西"，而不是不断换代。</li>
+<li><strong>开局面板不小气，但给的都是残次品</strong>：礼包给的是"能用的破东西"，不是优势。</li>
+<li><strong>折算率随系统升级提升</strong>：等于承认"后期打同样一只怪更值钱"，是防早期卡死的补偿机制。</li>
+</ol>
+<hr />
+<h2 id="_5">二、《末日逃出生天》（作者：阿兴的幻想，小说阅读网，连载）</h2>
+<p><strong>证据等级：原文</strong>（第 1 章系统说明段落，readnovel 书籍页片段）
+<strong>另有【二手】</strong>：红袖/网文百科的问答式综述页（AI 生成痕迹明显，数字仅作参照）</p>
+<h3 id="_6">可确认的原文事实</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>原文信息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统定位</td>
+<td>系统自述：「本系统只是个辅助系统，只能为宿主提供辅助要求」；「系统并不是你看的小说那样的全能且无敌」</td>
+</tr>
+<tr>
+<td>属性面板</td>
+<td>四项：<strong>精神 / 体质 / 力量 / 速度</strong>，各「满级 10」，普通人平均 5—6</td>
+</tr>
+<tr>
+<td>商城分类</td>
+<td>「商城总共分为了四大类分别为：<strong>医疗，防具，武器和载具</strong>」</td>
+</tr>
+<tr>
+<td><strong>没有食物与水</strong></td>
+<td>主角发现商城里没有食物和水，反问系统，此处为作品的核心压力设计</td>
+</tr>
+<tr>
+<td>签到积分</td>
+<td>活着一天签到 <strong>10</strong> 分；周签到 <strong>20</strong> 分；月签到 <strong>60</strong> 分</td>
+</tr>
+<tr>
+<td>击杀奖励</td>
+<td><strong>一个普通丧尸 1 积分</strong>（原文："一个普通丧尸1积分,二级和三级丧尸并没有详细说明"）</td>
+</tr>
+<tr>
+<td>医疗价</td>
+<td>棉签 <strong>1</strong> 分；碘伏 <strong>5</strong> 分</td>
+</tr>
+<tr>
+<td>武器价</td>
+<td>军用匕首 <strong>10</strong> 分；手枪 <strong>30</strong> 分</td>
+</tr>
+<tr>
+<td>弹药价</td>
+<td>子弹「统一 <strong>2 积分</strong>一颗」</td>
+</tr>
+<tr>
+<td>载具价</td>
+<td>最便宜的崭新桑塔纳 <strong>70</strong> 分</td>
+</tr>
+<tr>
+<td>属性价</td>
+<td>身体点数「一点 <strong>100 积分</strong>」</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">【二手】补充（未核正文，仅记录）</h3>
+<ul>
+<li>进化丧尸按阶段给分，最高 50 分。</li>
+<li>丧尸有"手→脚→躯干→头部"依次异变的进化路径，动物感染后成为丧尸兽。</li>
+</ul>
+<h3 id="_8">可提炼的结构</h3>
+<ol>
+<li><strong>极端克制型经济</strong>：一把手枪 = 30 只怪，一点属性 = 100 只怪。成长极慢，靠签到的固定收入兜底。</li>
+<li><strong>签到是"活着"的报酬</strong>：不击杀也有收入，但少到只能维持"不饿死"的错觉——因为它根本不卖吃的。</li>
+<li><strong>品类锁在"非食物"上</strong>：商城卖的是"让你能打、能跑、能护住自己"的东西，吃饭喝水必须出门。这是最值得抄的思路。</li>
+<li><strong>属性上限 10、普通人 5—6</strong>：小数值区间，避免后期数值膨胀。</li>
+<li><strong>弹药单价比武器更"疼"</strong>：2 分/发 ≈ 2 只怪，一梭子就是一个街区。</li>
+</ol>
+<hr />
+<h2 id="_9">三、《全球恐慌：尸灾纪元》（红袖添香 / 阅文系，连载）</h2>
+<p><strong>证据等级：二手</strong>（多个平台的百科式综述页，含大量结构化描述与"逐字还原系统语音"式表述，但<strong>未读到正文</strong>）
+<strong>结论：只取结构，不取数字。</strong></p>
+<h3 id="_10">【二手】记录到的机制描述</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>二手描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>系统模块</td>
+<td>四大固定模块：<strong>商城 / 丧尸图鉴 / 个人资料 / 个人技能</strong></td>
+</tr>
+<tr>
+<td>图鉴</td>
+<td>免费自动鉴定，遇新型感染者触发弹窗：体型、攻击模式、弱点、注意事项</td>
+</tr>
+<tr>
+<td>分层解锁</td>
+<td>第 2 章"仅开放一层货架"（基础食物 + 冷兵器）；第 9 章后解锁二级</td>
+</tr>
+<tr>
+<td>积分</td>
+<td>「积分仅来自击杀（丧尸 2 分、暴走丧尸 5 分、喷吐者 5 分）」</td>
+</tr>
+<tr>
+<td>技能树</td>
+<td>需前置条件，如「蛇皮走位」需 敏捷 ≥6 且消耗 2 点技能点</td>
+</tr>
+<tr>
+<td>制作</td>
+<td>「装备制作依赖废料回收与工作台实体操作」——制作不在系统里，在现实里</td>
+</tr>
+<tr>
+<td>副作用</td>
+<td>道具有效果也有代价：血腥药剂「惊动尸潮」、燃烧瓶「加速目标暴怒」</td>
+</tr>
+<tr>
+<td>系统语气</td>
+<td>提示带误导性（"你是个良好市民"实为数值嘲讽）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_11">可提炼的结构</h3>
+<ol>
+<li><strong>图鉴 = 知识型奖励</strong>：不直接给战力，给"知道怎么打"——和文字跑团的判定体系天然契合。</li>
+<li><strong>货架分层</strong>：不是"商品锁等级"，而是"整个货架逐层打开"，玩家能预期未来有什么。</li>
+<li><strong>技能点 + 属性门槛双前置</strong>：防止"有钱就能点满"。</li>
+<li><strong>制作留在现实</strong>：系统给材料/工具，成品要自己动手，工作台/材料/时间都是现实成本。</li>
+<li><strong>道具带副作用</strong>：强力道具不是纯增益，这是维持紧张感最便宜的手段。</li>
+</ol>
+<hr />
+<h2 id="_12">四、横向对比表</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>末日求生：我有系统商城【原文】</th>
+<th>末日逃出生天【原文】</th>
+<th>全球恐慌：尸灾纪元【二手】</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基准怪奖励</td>
+<td>1.00 币</td>
+<td>1 分</td>
+<td>2 分（丧尸）</td>
+</tr>
+<tr>
+<td>分级方式</td>
+<td>阶 + 级，按级折算</td>
+<td>普通/进化，未详</td>
+<td>按变异类型给分（2/5/5）</td>
+</tr>
+<tr>
+<td>食物在商城</td>
+<td><strong>在</strong>，饼干 1 币</td>
+<td><strong>不在</strong>（核心设计）</td>
+<td>一层货架有基础食物</td>
+</tr>
+<tr>
+<td>水价</td>
+<td>15（15 只怪）</td>
+<td>不卖</td>
+<td>一层有售（价未确认）</td>
+</tr>
+<tr>
+<td>药品价</td>
+<td>消炎药 80</td>
+<td>碘伏 5 / 棉签 1</td>
+<td>未确认</td>
+</tr>
+<tr>
+<td>近战价</td>
+<td>短刀 300；残破→完好升级 50</td>
+<td>军用匕首 10</td>
+<td>一层只卖冷兵器（价未确认）</td>
+</tr>
+<tr>
+<td>枪械价</td>
+<td>未在片段出现</td>
+<td>手枪 30</td>
+<td>未确认</td>
+</tr>
+<tr>
+<td>弹药价</td>
+<td>未在片段出现</td>
+<td>2/发</td>
+<td>未确认</td>
+</tr>
+<tr>
+<td>载具价</td>
+<td>滑板车（礼包赠）</td>
+<td>桑塔纳 70</td>
+<td>未确认</td>
+</tr>
+<tr>
+<td>属性价</td>
+<td>未出现</td>
+<td>1 点 = 100</td>
+<td>技能点 + 属性门槛</td>
+</tr>
+<tr>
+<td>货币与现实钱</td>
+<td>系统币独立（原文未写兑换）</td>
+<td>积分独立</td>
+<td>积分独立</td>
+</tr>
+<tr>
+<td>解锁/限制</td>
+<td>全品类开放，价格随等级浮动</td>
+<td>品类天然缺失</td>
+<td>货架分层（1 层→2 层）</td>
+</tr>
+<tr>
+<td>合成/制作</td>
+<td>有"升级"（同名装备提档）</td>
+<td>未提及</td>
+<td>废料回收 + 工作台（线下制作）</td>
+</tr>
+<tr>
+<td>防刷设计</td>
+<td>折算率随系统等级提升；水分价格压制</td>
+<td>签到固定 + 单价极高</td>
+<td>积分来源单一（仅击杀）</td>
+</tr>
+<tr>
+<td>系统语气</td>
+<td>干巴巴一行字</td>
+<td>会跟宿主拌嘴、强调自己是辅助</td>
+<td>带误导性的冷嘲</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_13">五、三条可以确认的"成熟套路"</h2>
+<ol>
+<li><strong>单价锚定一只基准怪</strong>。三部里最便宜的可食物/耗材都等于 1 只基准怪（饼干 1 币、棉签 1 分）。玩家不需要换算表就能懂物价。</li>
+<li><strong>商城不解决吃饭</strong>，或至少让吃饭很贵。这是"系统不能替代搜集"的唯一可靠实现方式。</li>
+<li><strong>成长必须比装备更贵</strong>。属性点 100 只怪、手枪 30 只怪——变强比换枪慢，玩家才会先想"怎么活"。</li>
+</ol>
+<h2 id="_14">六、明确不采用的东西（避免照搬）</h2>
+<table>
+<thead>
+<tr>
+<th>参照作品机制</th>
+<th>为何不用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>新手礼包（币 + 房 + 车 + 刀）</td>
+<td>与"系统不送东西"冲突，会直接抹掉开局压力</td>
+</tr>
+<tr>
+<td>系统签到发币</td>
+<td>会变成"躺着领钱"，削弱"必须出门"的动机</td>
+</tr>
+<tr>
+<td>商城全品类开放</td>
+<td>会让玩家跳过"现实搜刮"这一整套玩法</td>
+</tr>
+<tr>
+<td>丧尸图鉴自动鉴定</td>
+<td>会替玩家完成"认识敌人"的乐趣；本项目把认知留给观察与 NPC 情报</td>
+</tr>
+<tr>
+<td>系统内制作/合成</td>
+<td>会把现实世界的工具、材料、时间、场地成本全部抹掉</td>
+</tr>
+<tr>
+<td>折算率随系统等级上涨</td>
+<td>会形成"越后期打低级怪越划算"的反向激励</td>
+</tr>
+<tr>
+<td>满分 10 的小属性面板</td>
+<td>本项目已定 1—20 区间与 d100 判定，改面板会推翻既有规则</td>
+</tr>
+<tr>
+<td>别墅/移动堡垒类奖励</td>
+<td>与本项目"据点要自己修"的设定冲突</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_15">七、对本书的三条改造结论</h2>
+<ol>
+<li><strong>保留"1 只基准怪 = 1 份最便宜食物"的锚</strong>，但本项目基准怪是 10 SP，所以最便宜的一份食物应落在 <strong>8—10 SP</strong>（现有压缩饼干 8 SP ✓）。</li>
+<li><strong>饮水保持便宜、但不白给</strong>：本项目不采用 15 倍水价，而是用"自然水必须煮沸/过滤 + 净水片消耗"制造成本。理由：本项目的压力来自<strong>动作与时间</strong>，不是数字。</li>
+<li><strong>成长价必须明显高于装备价</strong>：属性点要远贵于一把刀。本项目的处理见 <code>系统设定/经验与等级.md</code> 的"换算表"。</li>
+</ol>
+<hr />
+<h2 id="_16">八、来源清单</h2>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th>来源</th>
+<th>类型</th>
+<th>用到的内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>纵横中文网《末日求生：我有系统商城》书籍页 + 第 1 章正文片段（2026-11-15 访问）</td>
+<td>原文</td>
+<td>1.00 币基准、水 15、消炎药 80、短刀 300、升级 50/100、新手礼包、折算率说明</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>readnovel《末日逃出生天》第 1 章系统说明片段</td>
+<td>原文</td>
+<td>四类商城、无食物水、签到 10/20/60、普通丧尸 1 分、棉签/碘伏/匕首/手枪/子弹/桑塔纳/属性点价格、属性四项满 10</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>红袖/网文百科《末日逃出生天》问答页</td>
+<td>二手</td>
+<td>进化丧尸最高 50 分、进化路径（未采信为设定）</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>红袖/潇湘/readnovel/xs8《全球恐慌：尸灾纪元》综述页</td>
+<td>二手</td>
+<td>四模块、货架分层、积分 2/5/5、技能前置、线下制作、道具副作用</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>各平台书籍信息页</td>
+<td>未确认</td>
+<td>连载状态、分类标签</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>未确认项明确列出</strong>：《全球恐慌：尸灾纪元》的所有价格、《末日逃出生天》二级/三级丧尸的具体分值、《末日求生：我有系统商城》的枪械与弹药定价——这三类都没有进入本项目设计依据，本文档也未据此推导任何数字。</p>
+</blockquote>
+</article><div class="pager"><a href="../交易系统/末日生存交易手册.html"><span class="lbl">← 上一篇</span>末日生存交易手册</a><a href="../系统设定/属性与技能.html" style="text-align:right"><span class="lbl">下一篇 →</span>属性与技能</a></div>
+</main>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

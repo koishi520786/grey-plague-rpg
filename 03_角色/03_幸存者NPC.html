@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>幸存者 NPC（普通与次要） · 灰疫之年 · 末日丧尸跑团库</title>
+<meta name="description" content="现代丧尸末日文字跑团知识库">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="in">
+  <button class="iconbtn menubtn" id="menuBtn">目录</button>
+  <a class="brand" href="../index.html">灰疫之年<em>·</em>跑团库</a>
+  <div class="tsearch"><input id="topSearch" placeholder="搜索全库，回车确认"></div>
+  <a class="iconbtn" href="../search.html">搜索</a>
+  <button class="iconbtn" id="themeBtn">明/暗</button>
+</div></header>
+<div class="layout">
+<aside id="sidebar"><div class="grp"><span>导航</span><a href="../index.html">首页</a><a href="../search.html">搜索</a></div>
+<div class="grp"><span>根目录</span>
+<a href="../00_GM启动提示词.html" title="00_GM启动提示词.md">00_GM启动提示词</a>
+<a href="../AI_START_HERE.html" title="AI_START_HERE.md">AI_START_HERE</a>
+<a href="../README.html" title="README.md">README</a>
+<a href="../本地存档模板.html" title="本地存档模板.md">本地存档模板</a>
+</div>
+<div class="grp"><span>01_世界观</span>
+<a href="../01_世界观/00_世界总索引.html" title="01_世界观/00_世界总索引.md">00_世界总索引</a>
+<a href="../01_世界观/01_灰疫病毒与爆发编年.html" title="01_世界观/01_灰疫病毒与爆发编年.md">01_灰疫病毒与爆发编年</a>
+<a href="../01_世界观/02_临江市地理与关键地点.html" title="01_世界观/02_临江市地理与关键地点.md">02_临江市地理与关键地点</a>
+<a href="../01_世界观/03_幸存者势力与组织.html" title="01_世界观/03_幸存者势力与组织.md">03_幸存者势力与组织</a>
+<a href="../01_世界观/04_气候季节与生存环境.html" title="01_世界观/04_气候季节与生存环境.md">04_气候季节与生存环境</a>
+<a href="../01_世界观/05_现实经济与物资流通.html" title="01_世界观/05_现实经济与物资流通.md">05_现实经济与物资流通</a>
+</div>
+<div class="grp"><span>02_丧尸</span>
+<a href="../02_丧尸/00_丧尸总索引.html" title="02_丧尸/00_丧尸总索引.md">00_丧尸总索引</a>
+<a href="../02_丧尸/01_感染机制与生理.html" title="02_丧尸/01_感染机制与生理.md">01_感染机制与生理</a>
+<a href="../02_丧尸/02_丧尸类型图鉴.html" title="02_丧尸/02_丧尸类型图鉴.md">02_丧尸类型图鉴</a>
+<a href="../02_丧尸/03_分布迁移与对抗.html" title="02_丧尸/03_分布迁移与对抗.md">03_分布迁移与对抗</a>
+</div>
+<div class="grp"><span>03_角色</span>
+<a href="../03_角色/00_角色总索引.html" title="03_角色/00_角色总索引.md">00_角色总索引</a>
+<a href="../03_角色/01_主角沈砚.html" title="03_角色/01_主角沈砚.md">01_主角沈砚</a>
+<a href="../03_角色/02_苏晞人物档案.html" title="03_角色/02_苏晞人物档案.md">02_苏晞人物档案</a>
+<a href="../03_角色/03_幸存者NPC.html" class="cur" title="03_角色/03_幸存者NPC.md">03_幸存者NPC</a>
+<a href="../03_角色/04_重要NPC与潜在伙伴.html" title="03_角色/04_重要NPC与潜在伙伴.md">04_重要NPC与潜在伙伴</a>
+<a href="../03_角色/05_人物关系网与登场表.html" title="03_角色/05_人物关系网与登场表.md">05_人物关系网与登场表</a>
+</div>
+<div class="grp"><span>04_系统</span>
+<a href="../04_系统/00_系统总索引.html" title="04_系统/00_系统总索引.md">00_系统总索引</a>
+<a href="../04_系统/01_SP结算规则.html" title="04_系统/01_SP结算规则.md">01_SP结算规则</a>
+<a href="../04_系统/03_反刷与成长上限.html" title="04_系统/03_反刷与成长上限.md">03_反刷与成长上限</a>
+<a href="../04_系统/04_库存与物品管理.html" title="04_系统/04_库存与物品管理.md">04_库存与物品管理</a>
+</div>
+<div class="grp"><span>06_跑团规则</span>
+<a href="../06_跑团规则/00_规则总索引.html" title="06_跑团规则/00_规则总索引.md">00_规则总索引</a>
+<a href="../06_跑团规则/01_GM运行总则与玩家控制权.html" title="06_跑团规则/01_GM运行总则与玩家控制权.md">01_GM运行总则与玩家控制权</a>
+<a href="../06_跑团规则/02_叙事对话与苏晞演出.html" title="06_跑团规则/02_叙事对话与苏晞演出.md">02_叙事对话与苏晞演出</a>
+<a href="../06_跑团规则/03_判定与战斗.html" title="06_跑团规则/03_判定与战斗.md">03_判定与战斗</a>
+<a href="../06_跑团规则/04_探索搜刮与交易.html" title="06_跑团规则/04_探索搜刮与交易.md">04_探索搜刮与交易</a>
+<a href="../06_跑团规则/05_生存状态与伤病.html" title="06_跑团规则/05_生存状态与伤病.md">05_生存状态与伤病</a>
+<a href="../06_跑团规则/06_剧情推进与GM工具箱.html" title="06_跑团规则/06_剧情推进与GM工具箱.md">06_剧情推进与GM工具箱</a>
+<a href="../06_跑团规则/07_时间推进与状态台账.html" title="06_跑团规则/07_时间推进与状态台账.md">07_时间推进与状态台账</a>
+</div>
+<div class="grp"><span>07_剧本</span>
+<a href="../07_剧本/00_开场与总纲.html" title="07_剧本/00_开场与总纲.md">00_开场与总纲</a>
+<a href="../07_剧本/01_第一章_断电之夜.html" title="07_剧本/01_第一章_断电之夜.md">01_第一章_断电之夜</a>
+<a href="../07_剧本/02_前十四天事件池.html" title="07_剧本/02_前十四天事件池.md">02_前十四天事件池</a>
+</div>
+<div class="grp"><span>08_索引</span>
+<a href="../08_索引/CHECK_REPORT.html" title="08_索引/CHECK_REPORT.md">CHECK_REPORT</a>
+<a href="../08_索引/COUNTS.html" title="08_索引/COUNTS.md">COUNTS</a>
+<a href="../08_索引/KEYWORD_INDEX.html" title="08_索引/KEYWORD_INDEX.md">KEYWORD_INDEX</a>
+<a href="../08_索引/MASTER_INDEX.html" title="08_索引/MASTER_INDEX.md">MASTER_INDEX</a>
+</div>
+<div class="grp"><span>交易系统</span>
+<a href="../交易系统/商品索引.html" title="交易系统/商品索引.md">商品索引</a>
+<a href="../交易系统/末日生存交易手册.html" title="交易系统/末日生存交易手册.md">末日生存交易手册</a>
+</div>
+<div class="grp"><span>研究资料</span>
+<a href="../研究资料/同类作品系统机制对比.html" title="研究资料/同类作品系统机制对比.md">同类作品系统机制对比</a>
+</div>
+<div class="grp"><span>系统设定</span>
+<a href="../系统设定/属性与技能.html" title="系统设定/属性与技能.md">属性与技能</a>
+<a href="../系统设定/经验与等级.html" title="系统设定/经验与等级.md">经验与等级</a>
+</div></aside>
+<main>
+<div class="crumb"><a href="../index.html">灰疫之年 · 末日丧尸跑团库</a> / 03_角色</div><div class="docbar"><span>03_角色/03_幸存者NPC.md</span><span class="sp"></span><a href="https://github.com/koishi520786/grey-plague-rpg/blob/main/03_角色/03_幸存者NPC.md" target="_blank" rel="noopener">Markdown 原文 ↗</a><a href="../search.html?q=幸存者 NPC（普通与次要）">全库搜索</a></div><article>
+<h1 id="npc">幸存者 NPC（普通与次要）</h1>
+<blockquote>
+<p>字段：编号 / 姓名 / 年龄 / 外貌 / 性格 / 说话 / 想要什么 / 能做什么 / 关系 / 登场 / 可能走向
+重要人物与潜在伙伴另见 <code>04_重要NPC与潜在伙伴.md</code>。</p>
+</blockquote>
+<hr />
+<h2 id="npc-03-49-f-01">NPC-03 · 林素秋 · 49 · 三中食堂管理员（F-01）</h2>
+<p>矮胖，短发烫过，围裙永远系着。手背有烫伤疤。
+<strong>性格</strong>：精明、务实、不留情面，但不刻薄。她见过太多"多打一勺"的请求，一律用"表上写着"回绝。
+<strong>说话</strong>：短句，先报数字。"两个人，两餐，八百卡。签字。"
+<strong>想要</strong>：让食堂撑到 12 月；让自己的女儿（不在三中，在江南）有个下落。
+<strong>能做</strong>：配给、算账、腌菜、把边角料做成能吃的东西。
+<strong>关系</strong>：与韩守义配合默契；与赵铁互相看不顺眼（赵铁想给守卫加餐）。
+<strong>登场</strong>：进三中登记处。<strong>走向</strong>：如果沈砚能带来柴油，她会私下多给半份——并且要人情，不要感谢。</p>
+<hr />
+<h2 id="npc-05-34-f-01">NPC-05 · 赵铁 · 34 · 体育老师、保卫队长（F-01）</h2>
+<p>一米九，肩宽，光头，冬天也只穿短袖加外套。左手食指少一截。
+<strong>性格</strong>：直、硬、护自己人、有点迷信拳头。不是坏人，但会把"没用的人"说成"消耗"。
+<strong>说话</strong>：嗓门大，爱拍人肩膀。"行，你能打吗？能打就留下。"
+<strong>想要</strong>：把三中的防卫做成"一个能打的队"，而不是"一帮等饭的"。
+<strong>能做</strong>：近身格斗（比在场所有人都强）、组织防线、训练人。
+<strong>关系</strong>：与韩守义争权；欣赏能干活的男人；对苏晞这类"小孩"没有耐心但不是恶意。
+<strong>登场</strong>：校门值班。<strong>走向</strong>：若三中出事，他会第一个冲出去，也可能第一个把人挡在门外。</p>
+<hr />
+<h2 id="npc-06-15-04">NPC-06 · 江小满 · 15 · 三中初三学生（潜在伙伴，详见 04）</h2>
+<hr />
+<h2 id="npc-07-61-f-01">NPC-07 · 老宋 · 61 · 三中门卫（F-01）</h2>
+<p>瘦小，戴一顶旧棉帽，右耳背。腰上一串钥匙共 27 把，他记得每一把开哪扇门。
+<strong>性格</strong>：话很少，记性极好，认脸。对小孩温和，对成年人沉默。
+<strong>说话</strong>：声音大（因为自己听不见），"你说啥？""钥匙在这儿。"
+<strong>想要</strong>：守好这扇门；每天能抽一根烟。
+<strong>能做</strong>：所有门的开合、校内暗道（他知道通往锅炉房的那条）、看门、认出谁不是本校的。
+<strong>关系</strong>：与林素秋是老同事；会偷偷给苏晞这类孩子留门。
+<strong>登场</strong>：三中门口。<strong>走向</strong>：关键时刻他能开门，也能锁门。</p>
+<hr />
+<h2 id="npc-10-24-04">NPC-10 · 周妍 · 24 · 白鸽护士（潜在伙伴，详见 04）</h2>
+<hr />
+<h2 id="npc-12-38-f-02">NPC-12 · 韦振 · 38 · 副营长（F-02）</h2>
+<p>中等身材，脸圆，笑的时候眼睛不笑。军装永远整齐。
+<strong>性格</strong>：现实主义、官僚、谨慎的贪。他不抢，他只是"按程序"把东西调到自己的账上。
+<strong>说话</strong>：官腔，爱用"原则上""按程序"。
+<strong>想要</strong>：粮食控制权；一个"说得过去的未来"（他已经不信上级了，但不会说出来）。
+<strong>能做</strong>：调兵、开通行条、压住事。
+<strong>关系</strong>：与周叙表面服从、私下较劲；掌握吴磊的小辫子。
+<strong>登场</strong>：体育馆行政区。<strong>走向</strong>：可能成为交易对象，也可能在关键时刻"按程序"不给开门。</p>
+<hr />
+<h2 id="npc-13-21-f-02">NPC-13 · 吴磊（小吴）· 21 · 士兵（F-02）</h2>
+<p>瘦，脸上有青春痘，军装袖子太长。说话时眼睛乱转。
+<strong>性格</strong>：胆小、贪小、不算坏。怕上官，也想给老家的母亲留点东西。
+<strong>说话</strong>：小声，快，爱重复。"就、就这一次。真的就这一次。"
+<strong>想要</strong>：攒点物资；活着回家。
+<strong>能做</strong>：开后门、拿配给、报信（不保证准）。
+<strong>关系</strong>：韦振的下属（被捏着）；与铁门帮有往来。
+<strong>登场</strong>：体育馆后门的哨位。<strong>走向</strong>：一次背叛，或一次帮助——取决于谁先给他安全感。</p>
+<hr />
+<h2 id="npc-15-28-f-03">NPC-15 · 阿豹 · 28 · 铁门帮打手头（F-03）</h2>
+<p>一米八，纹身到手腕，右肩有一道刀伤（自己人砍的）。牙齿很白。
+<strong>性格</strong>：凶、直、有点讲义气（只对刀哥）。喜欢用恐吓解决事情，因为有效。
+<strong>说话</strong>：短，带笑，爱叫"朋友"。"朋友，这箱水是我的。"
+<strong>想要</strong>：扩地盘到三中门口；被刀哥看作接班人。
+<strong>能做</strong>：打、带人、砸门、逼人交东西。
+<strong>关系</strong>：忠于老刀；与邹文彬互相看不起。
+<strong>登场</strong>：超市门口或街上"征用"。<strong>走向</strong>：他会先动手；也会在打不过时立刻谈。</p>
+<hr />
+<h2 id="npc-16-35-f-03">NPC-16 · 邹文彬（眼镜）· 35 · 铁门帮账房（F-03）</h2>
+<p>瘦，戴金丝眼镜（裂了一片），穿羽绒马甲，手指干净。
+<strong>性格</strong>：谨慎、会算、想活到"秩序恢复"那天。他记账，也记人情。
+<strong>说话</strong>：礼貌、绕、爱用"我们能商量"。
+<strong>想要</strong>：把铁门帮变成"江北区护卫服务有限公司"。
+<strong>能做</strong>：算账、谈判、写文书、找关系。
+<strong>关系</strong>：与阿豹路线之争；暗中与体育馆有联系。
+<strong>登场</strong>：超市后门的小桌（他在那儿记账）。<strong>走向</strong>：最好谈的人，也最会把人卖了不留痕。</p>
+<hr />
+<h2 id="npc-19-29-04">NPC-19 · 陆昭 · 29 · 长庚技术员（潜在伙伴，详见 04）</h2>
+<hr />
+<h2 id="npc-21-19-04">NPC-21 · 邱雁 · 19 · 邱德海女儿（潜在伙伴，详见 04）</h2>
+<hr />
+<h2 id="npc-23-57">NPC-23 · 周德明（老周）· 57 · 汽修行老板、沈砚师父</h2>
+<p>胖，白发，左手常年有油。爱骂人，骂完给钱。
+<strong>性格</strong>：嘴臭心软，护徒弟，谁都敢怼。
+<strong>说话</strong>："你个兔崽子""这活儿这么干等着爆缸吧"。
+<strong>想要</strong>：沈砚别死；店里的举升机别被人拆了。
+<strong>能做</strong>：修一切带轮子的东西，会电焊、会钣金。
+<strong>关系</strong>：沈砚的师父；认识江北区一半的司机。
+<strong>登场状态</strong>：<strong>下落不明。</strong> D+6 他让沈砚"先回家看看那丫头"，之后没消息。
+<strong>线索（三个可选）</strong>：汽修行卷帘门从里面被拉下、办公室桌上有半瓶没喝完的酒、后院有一辆不属于他的面包车。
+<strong>走向</strong>：活着（被困在某处 / 在三中 / 在铁门帮做工），或者已经死了。<strong>GM 不要提前确定，等玩家去找。</strong></p>
+<hr />
+<h2 id="npc-24-31-2">NPC-24 · 秦小雨 · 31 · 单亲母亲（幸福里 2 号楼）</h2>
+<p>瘦，头发扎得很紧，眼下有很重的青。抱着孩子的时候整个人是绷着的。
+<strong>性格</strong>：怯、固执、护崽。不敢求人，但会一直在门口站着。
+<strong>说话</strong>：极轻，句子短，常说"不好意思"。
+<strong>想要</strong>：女儿苗苗（4 岁）能吃到热的东西。
+<strong>能做</strong>：缝补、洗衣、做面食。
+<strong>关系</strong>：与沈砚同小区但不算认识（见过几次）；苗苗从 D+3 起不再说话。
+<strong>登场</strong>：2 号楼楼道，或者夜里敲 502 的门。
+<strong>走向</strong>：她的存在会迫使玩家做"分不分口粮"的选择。<strong>不预设对错。</strong></p>
+<hr />
+<h2 id="npc-25-60">NPC-25 · 老陈 · 60 多岁 · 拾荒者、情报贩子</h2>
+<p>穿三层外套，背一个比人还大的编织袋，指甲黑。眼睛很亮。
+<strong>性格</strong>：滑、健谈、怕死、守信（在小事上）。
+<strong>说话</strong>：絮絮叨叨，爱绕圈子，最后一句才是重点。
+<strong>想要</strong>：烟、电池、能换的东西。
+<strong>能做</strong>：知道哪条巷子被封、哪栋楼被清过、谁昨天死了。
+<strong>关系</strong>：与各方都有点联系，谁都不亲。
+<strong>登场</strong>：街上，被尸群追、或者蹲在某个门口吃东西。<strong>走向</strong>：他会卖情报，也会为半包烟出卖玩家——但价格公道。</p>
+<hr />
+<h2 id="npc-26-21-04">NPC-26 · 顾青 · 21 · 医学生（潜在伙伴，详见 04）</h2>
+<hr />
+<h2 id="_1">附：群众（不需要档案的）</h2>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>用法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三中居民（约 380 人）</td>
+<td>用"有人在低声说""排队的人往前挪了挪"来表现，不要逐一造名</td>
+</tr>
+<tr>
+<td>体育馆收容者（约 2200 人）</td>
+<td>数字、秩序、审查；个体只在对白需要时出现</td>
+</tr>
+<tr>
+<td>铁门帮手下（约 55 人）</td>
+<td>无名字，行为由阿豹/老刀/眼镜的性格外推</td>
+</tr>
+<tr>
+<td>静默者其余 5 人</td>
+<td>编号 17-A～17-E，不开口，只用动作和弩箭表达</td>
+</tr>
+<tr>
+<td>溃兵</td>
+<td>3—7 人一组，无名字。他们只是"有枪的恐惧"</td>
+</tr>
+</tbody>
+</table>
+</article><div class="pager"><a href="../03_角色/02_苏晞人物档案.html"><span class="lbl">← 上一篇</span>02_苏晞人物档案</a><a href="../03_角色/04_重要NPC与潜在伙伴.html" style="text-align:right"><span class="lbl">下一篇 →</span>04_重要NPC与潜在伙伴</a></div>
+</main>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>

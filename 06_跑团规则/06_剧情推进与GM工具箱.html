@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>剧情推进与 GM 工具箱 · 灰疫之年 · 末日丧尸跑团库</title>
+<meta name="description" content="现代丧尸末日文字跑团知识库">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="topbar"><div class="in">
+  <button class="iconbtn menubtn" id="menuBtn">目录</button>
+  <a class="brand" href="../index.html">灰疫之年<em>·</em>跑团库</a>
+  <div class="tsearch"><input id="topSearch" placeholder="搜索全库，回车确认"></div>
+  <a class="iconbtn" href="../search.html">搜索</a>
+  <button class="iconbtn" id="themeBtn">明/暗</button>
+</div></header>
+<div class="layout">
+<aside id="sidebar"><div class="grp"><span>导航</span><a href="../index.html">首页</a><a href="../search.html">搜索</a></div>
+<div class="grp"><span>根目录</span>
+<a href="../00_GM启动提示词.html" title="00_GM启动提示词.md">00_GM启动提示词</a>
+<a href="../AI_START_HERE.html" title="AI_START_HERE.md">AI_START_HERE</a>
+<a href="../README.html" title="README.md">README</a>
+<a href="../本地存档模板.html" title="本地存档模板.md">本地存档模板</a>
+</div>
+<div class="grp"><span>01_世界观</span>
+<a href="../01_世界观/00_世界总索引.html" title="01_世界观/00_世界总索引.md">00_世界总索引</a>
+<a href="../01_世界观/01_灰疫病毒与爆发编年.html" title="01_世界观/01_灰疫病毒与爆发编年.md">01_灰疫病毒与爆发编年</a>
+<a href="../01_世界观/02_临江市地理与关键地点.html" title="01_世界观/02_临江市地理与关键地点.md">02_临江市地理与关键地点</a>
+<a href="../01_世界观/03_幸存者势力与组织.html" title="01_世界观/03_幸存者势力与组织.md">03_幸存者势力与组织</a>
+<a href="../01_世界观/04_气候季节与生存环境.html" title="01_世界观/04_气候季节与生存环境.md">04_气候季节与生存环境</a>
+<a href="../01_世界观/05_现实经济与物资流通.html" title="01_世界观/05_现实经济与物资流通.md">05_现实经济与物资流通</a>
+</div>
+<div class="grp"><span>02_丧尸</span>
+<a href="../02_丧尸/00_丧尸总索引.html" title="02_丧尸/00_丧尸总索引.md">00_丧尸总索引</a>
+<a href="../02_丧尸/01_感染机制与生理.html" title="02_丧尸/01_感染机制与生理.md">01_感染机制与生理</a>
+<a href="../02_丧尸/02_丧尸类型图鉴.html" title="02_丧尸/02_丧尸类型图鉴.md">02_丧尸类型图鉴</a>
+<a href="../02_丧尸/03_分布迁移与对抗.html" title="02_丧尸/03_分布迁移与对抗.md">03_分布迁移与对抗</a>
+</div>
+<div class="grp"><span>03_角色</span>
+<a href="../03_角色/00_角色总索引.html" title="03_角色/00_角色总索引.md">00_角色总索引</a>
+<a href="../03_角色/01_主角沈砚.html" title="03_角色/01_主角沈砚.md">01_主角沈砚</a>
+<a href="../03_角色/02_苏晞人物档案.html" title="03_角色/02_苏晞人物档案.md">02_苏晞人物档案</a>
+<a href="../03_角色/03_幸存者NPC.html" title="03_角色/03_幸存者NPC.md">03_幸存者NPC</a>
+<a href="../03_角色/04_重要NPC与潜在伙伴.html" title="03_角色/04_重要NPC与潜在伙伴.md">04_重要NPC与潜在伙伴</a>
+<a href="../03_角色/05_人物关系网与登场表.html" title="03_角色/05_人物关系网与登场表.md">05_人物关系网与登场表</a>
+</div>
+<div class="grp"><span>04_系统</span>
+<a href="../04_系统/00_系统总索引.html" title="04_系统/00_系统总索引.md">00_系统总索引</a>
+<a href="../04_系统/01_SP结算规则.html" title="04_系统/01_SP结算规则.md">01_SP结算规则</a>
+<a href="../04_系统/03_反刷与成长上限.html" title="04_系统/03_反刷与成长上限.md">03_反刷与成长上限</a>
+<a href="../04_系统/04_库存与物品管理.html" title="04_系统/04_库存与物品管理.md">04_库存与物品管理</a>
+</div>
+<div class="grp"><span>06_跑团规则</span>
+<a href="../06_跑团规则/00_规则总索引.html" title="06_跑团规则/00_规则总索引.md">00_规则总索引</a>
+<a href="../06_跑团规则/01_GM运行总则与玩家控制权.html" title="06_跑团规则/01_GM运行总则与玩家控制权.md">01_GM运行总则与玩家控制权</a>
+<a href="../06_跑团规则/02_叙事对话与苏晞演出.html" title="06_跑团规则/02_叙事对话与苏晞演出.md">02_叙事对话与苏晞演出</a>
+<a href="../06_跑团规则/03_判定与战斗.html" title="06_跑团规则/03_判定与战斗.md">03_判定与战斗</a>
+<a href="../06_跑团规则/04_探索搜刮与交易.html" title="06_跑团规则/04_探索搜刮与交易.md">04_探索搜刮与交易</a>
+<a href="../06_跑团规则/05_生存状态与伤病.html" title="06_跑团规则/05_生存状态与伤病.md">05_生存状态与伤病</a>
+<a href="../06_跑团规则/06_剧情推进与GM工具箱.html" class="cur" title="06_跑团规则/06_剧情推进与GM工具箱.md">06_剧情推进与GM工具箱</a>
+<a href="../06_跑团规则/07_时间推进与状态台账.html" title="06_跑团规则/07_时间推进与状态台账.md">07_时间推进与状态台账</a>
+</div>
+<div class="grp"><span>07_剧本</span>
+<a href="../07_剧本/00_开场与总纲.html" title="07_剧本/00_开场与总纲.md">00_开场与总纲</a>
+<a href="../07_剧本/01_第一章_断电之夜.html" title="07_剧本/01_第一章_断电之夜.md">01_第一章_断电之夜</a>
+<a href="../07_剧本/02_前十四天事件池.html" title="07_剧本/02_前十四天事件池.md">02_前十四天事件池</a>
+</div>
+<div class="grp"><span>08_索引</span>
+<a href="../08_索引/CHECK_REPORT.html" title="08_索引/CHECK_REPORT.md">CHECK_REPORT</a>
+<a href="../08_索引/COUNTS.html" title="08_索引/COUNTS.md">COUNTS</a>
+<a href="../08_索引/KEYWORD_INDEX.html" title="08_索引/KEYWORD_INDEX.md">KEYWORD_INDEX</a>
+<a href="../08_索引/MASTER_INDEX.html" title="08_索引/MASTER_INDEX.md">MASTER_INDEX</a>
+</div>
+<div class="grp"><span>交易系统</span>
+<a href="../交易系统/商品索引.html" title="交易系统/商品索引.md">商品索引</a>
+<a href="../交易系统/末日生存交易手册.html" title="交易系统/末日生存交易手册.md">末日生存交易手册</a>
+</div>
+<div class="grp"><span>研究资料</span>
+<a href="../研究资料/同类作品系统机制对比.html" title="研究资料/同类作品系统机制对比.md">同类作品系统机制对比</a>
+</div>
+<div class="grp"><span>系统设定</span>
+<a href="../系统设定/属性与技能.html" title="系统设定/属性与技能.md">属性与技能</a>
+<a href="../系统设定/经验与等级.html" title="系统设定/经验与等级.md">经验与等级</a>
+</div></aside>
+<main>
+<div class="crumb"><a href="../index.html">灰疫之年 · 末日丧尸跑团库</a> / 06_跑团规则</div><div class="docbar"><span>06_跑团规则/06_剧情推进与GM工具箱.md</span><span class="sp"></span><a href="https://github.com/koishi520786/grey-plague-rpg/blob/main/06_跑团规则/06_剧情推进与GM工具箱.md" target="_blank" rel="noopener">Markdown 原文 ↗</a><a href="../search.html?q=剧情推进与 GM 工具箱">全库搜索</a></div><article>
+<h1 id="gm">剧情推进与 GM 工具箱</h1>
+<h2 id="_1">一、事件从哪来</h2>
+<p><strong>只有一个来源：世界的物理与人的利益。</strong></p>
+<table>
+<thead>
+<tr>
+<th>好事件</th>
+<th>坏事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>因为水压下降，所以楼里的人都下楼提水，楼道变吵</td>
+<td>"就在这时，一群丧尸冲了进来"</td>
+</tr>
+<tr>
+<td>因为铁门帮要收月供，所以他们第三天会来</td>
+<td>"刚好有人来救你"</td>
+</tr>
+<tr>
+<td>因为老刀怕火，所以可以用火谈判</td>
+<td>"老刀突然良心发现"</td>
+</tr>
+<tr>
+<td>因为天黑了，所以必须找地方</td>
+<td>"前面的路刚好塌了"（除非事先埋过线索）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>判断标准</strong>：这件事，如果主角不在场，会不会照样发生？会 → 可以用。不会 → 是 GM 编的，删掉。</p>
+<h2 id="_2">二、随机遭遇（只在"该有风险的时候"掷）</h2>
+<p><strong>每 4 小时一次（在户外或有风险的室内），d100：</strong></p>
+<table>
+<thead>
+<tr>
+<th>区域</th>
+<th>01—10</th>
+<th>11—25</th>
+<th>26—35</th>
+<th>36—45</th>
+<th>46—00</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>江北老城（已清）</td>
+<td>1 只 Z-1</td>
+<td>3—4 只 Z-1</td>
+<td>拾荒者</td>
+<td>野狗</td>
+<td>无事</td>
+</tr>
+<tr>
+<td>江北老城（未清）</td>
+<td>2 只 Z-1</td>
+<td>3—6 只 Z-1 + 可能 Z-3</td>
+<td>1 只 Z-2</td>
+<td>铁门帮的人</td>
+<td>无事</td>
+</tr>
+<tr>
+<td>主干道/超市</td>
+<td>4—8 只 Z-1</td>
+<td>群（6—10）</td>
+<td>有主的地方（有人守）</td>
+<td>溃兵</td>
+<td>无事</td>
+</tr>
+<tr>
+<td>医院/地下</td>
+<td>Z-3 伏击</td>
+<td>密集群</td>
+<td>Z-4</td>
+<td>Z-6</td>
+<td>无事</td>
+</tr>
+<tr>
+<td>城郊</td>
+<td>野狗</td>
+<td>2—3 只 Z-1</td>
+<td>村民（警惕）</td>
+<td>拾荒者</td>
+<td>无事</td>
+</tr>
+</tbody>
+</table>
+<p><strong>时段修正</strong>：夜（17:30 后）把"无事"区间缩到 46—60，其余全部前移。
+<strong>已经算过数的场景不要重掷</strong>：一旦定了"这栋楼有 3 只"，就不再掷遭遇，按已知信息推进。</p>
+<h2 id="_3">三、场景卡模板（写新地点/新事件时用）</h2>
+<pre><code>【场景】LOC-XX / 自定义
+时间：      地点：      天气：
+这里有什么（气味/声音/光）：
+已知的威胁：
+可能的收获：
+谁会来（势力/时间）：
+一条可被玩家发现的线索：
+退出方式（至少两条）：
+</code></pre>
+<h2 id="npc-30">四、NPC 即兴生成（30 秒造一个人）</h2>
+<table>
+<thead>
+<tr>
+<th>d100</th>
+<th>姓</th>
+<th></th>
+<th>d100</th>
+<th>名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01—08</td>
+<td>王</td>
+<td></td>
+<td>01—10</td>
+<td>建国</td>
+</tr>
+<tr>
+<td>09—16</td>
+<td>李</td>
+<td></td>
+<td>11—20</td>
+<td>秀兰</td>
+</tr>
+<tr>
+<td>17—24</td>
+<td>张</td>
+<td></td>
+<td>21—30</td>
+<td>志强</td>
+</tr>
+<tr>
+<td>25—32</td>
+<td>刘</td>
+<td></td>
+<td>31—40</td>
+<td>小燕</td>
+</tr>
+<tr>
+<td>33—40</td>
+<td>陈</td>
+<td></td>
+<td>41—50</td>
+<td>文斌</td>
+</tr>
+<tr>
+<td>41—48</td>
+<td>杨</td>
+<td></td>
+<td>51—60</td>
+<td>春梅</td>
+</tr>
+<tr>
+<td>49—56</td>
+<td>赵</td>
+<td></td>
+<td>61—70</td>
+<td>立新</td>
+</tr>
+<tr>
+<td>57—64</td>
+<td>黄</td>
+<td></td>
+<td>71—80</td>
+<td>小勇</td>
+</tr>
+<tr>
+<td>65—72</td>
+<td>周</td>
+<td></td>
+<td>81—90</td>
+<td>桂芳</td>
+</tr>
+<tr>
+<td>73—80</td>
+<td>吴</td>
+<td></td>
+<td>91—00</td>
+<td>阿龙</td>
+</tr>
+<tr>
+<td>81—90</td>
+<td>徐／孙／马</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>91—00</td>
+<td>其他</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>d10</th>
+<th>动机</th>
+<th></th>
+<th>d10</th>
+<th>说话方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>找家人</td>
+<td></td>
+<td>1</td>
+<td>短句，不看人</td>
+</tr>
+<tr>
+<td>2</td>
+<td>要食物</td>
+<td></td>
+<td>2</td>
+<td>客气，绕圈</td>
+</tr>
+<tr>
+<td>3</td>
+<td>要安全的地方</td>
+<td></td>
+<td>3</td>
+<td>大声，爱重复</td>
+</tr>
+<tr>
+<td>4</td>
+<td>要报复</td>
+<td></td>
+<td>4</td>
+<td>爱说数字</td>
+</tr>
+<tr>
+<td>5</td>
+<td>要别人听他的</td>
+<td></td>
+<td>5</td>
+<td>自嘲</td>
+</tr>
+<tr>
+<td>6</td>
+<td>要赎罪</td>
+<td></td>
+<td>6</td>
+<td>反问句</td>
+</tr>
+<tr>
+<td>7</td>
+<td>只想一个人待着</td>
+<td></td>
+<td>7</td>
+<td>一句话说一半</td>
+</tr>
+<tr>
+<td>8</td>
+<td>想跟人一起</td>
+<td></td>
+<td>8</td>
+<td>命令式</td>
+</tr>
+<tr>
+<td>9</td>
+<td>要药</td>
+<td></td>
+<td>9</td>
+<td>结巴</td>
+</tr>
+<tr>
+<td>10</td>
+<td>不知道自己要什么</td>
+<td></td>
+<td>10</td>
+<td>极轻，几乎听不见</td>
+</tr>
+</tbody>
+</table>
+<p><strong>造完立刻给他一个"矛盾"</strong>：想跟人一起但又怕人；要药但没钱；要安全但不愿守夜。有了矛盾，人就活了。</p>
+<h2 id="_4">五、长期线的三根轴</h2>
+<table>
+<thead>
+<tr>
+<th>轴</th>
+<th>内容</th>
+<th>时间尺度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>生存轴</strong></td>
+<td>食物、水、燃料、住处、伤员</td>
+<td>每天</td>
+</tr>
+<tr>
+<td><strong>关系轴</strong></td>
+<td>三中、体育馆、铁门帮、白鸽、船帮的站位</td>
+<td>每周</td>
+</tr>
+<tr>
+<td><strong>真相轴</strong></td>
+<td>老周的下落、二院地下二层、长庚在找什么、病毒从哪来（永远不给完整答案）</td>
+<td>每月</td>
+</tr>
+</tbody>
+</table>
+<p><strong>三根轴不能同时紧。</strong> 一天里最多一根轴推进，剩下的当背景。</p>
+<h2 id="714">六、节奏模板（一章 = 7—14 天）</h2>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. 日常</td>
+<td>两天平静的分配、修缮、对话（建立关系，让玩家放松）</td>
+</tr>
+<tr>
+<td>2. 缺口</td>
+<td>水/药/燃料/人手，出现一个必须外出的理由</td>
+</tr>
+<tr>
+<td>3. 外出</td>
+<td>搜刮或交涉，1—2 次判定，1 次意外</td>
+</tr>
+<tr>
+<td>4. 代价</td>
+<td>受伤、失去物资、得罪人、或者看见不该看的东西</td>
+</tr>
+<tr>
+<td>5. 余波</td>
+<td>回来之后的安静戏：包扎、分配、苏晞的一句话</td>
+</tr>
+<tr>
+<td>6. 变化</td>
+<td>世界往前走了一步（有人搬走了、有人死了、有人来了）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>不要每章都死人。</strong> 死亡多了就不疼了。</p>
+<h2 id="gm_1">七、三条 GM 自律</h2>
+<ol>
+<li><strong>不为了"好玩"加敌人。</strong> 想加，先想它从哪来。</li>
+<li><strong>不给主角"刚好"的帮助。</strong> 救人也要代价（人情、物资、位置暴露）。</li>
+<li><strong>不解释谜。</strong> 玩家可以猜，NPC 可以猜错，世界不给标准答案。</li>
+</ol>
+<h2 id="_5">八、需要长期埋的四个钩子</h2>
+<table>
+<thead>
+<tr>
+<th>钩子</th>
+<th>第一次出现</th>
+<th>后续</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>老周（NPC-23）的下落</td>
+<td>汽修行（LOC-07）的三条线索</td>
+<td>每次经过附近都可以追一点</td>
+</tr>
+<tr>
+<td>二院地下二层</td>
+<td>白鸽提到"下面还有东西"</td>
+<td>需要装备、人手、电</td>
+</tr>
+<tr>
+<td>长庚的采样单</td>
+<td>岑柏舟手里的一张纸</td>
+<td>名单上有"沈砚"？不，别这么写。名单上有一串编号</td>
+</tr>
+<tr>
+<td>江北大桥的三十米缺口</td>
+<td>一开始就知道桥断了</td>
+<td>冬天江面结冰？——<strong>不。江面不会结冰</strong>（别给捷径）</td>
+</tr>
+</tbody>
+</table>
+</article><div class="pager"><a href="../06_跑团规则/05_生存状态与伤病.html"><span class="lbl">← 上一篇</span>05_生存状态与伤病</a><a href="../06_跑团规则/07_时间推进与状态台账.html" style="text-align:right"><span class="lbl">下一篇 →</span>07_时间推进与状态台账</a></div>
+</main>
+</div>
+<script src="../assets/app.js"></script>
+</body>
+</html>
