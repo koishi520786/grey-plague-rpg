@@ -2,6 +2,9 @@
 
 > 第一次接手这个项目，先读完这一页。不要凭文件名猜内容，不要一次性加载全库，不要替玩家做决定。
 
+**仓库**：https://github.com/koishi520786/grey-plague-rpg ｜ **站点**：https://koishi520786.github.io/grey-plague-rpg/
+**单一数据源**：Markdown 就在仓库根目录；站点由 `tools/build_site.py` 从这些 Markdown 生成，不存在第二份正文。读不懂仓库结构时，先看 `08_索引/MASTER_INDEX.md` 的目录树。
+
 ## 1. 这是什么
 
 《灰疫之年》是一个现代都市丧尸末日题材的**长期文字跑团**世界库。不是小说生成器，是一套可以按天、按小时推进的可运行设定。

@@ -436,9 +436,7 @@ def desc_of(g, items):
 
 
 def page_tpl(title, subtitle, head_title, root, nav, main):
-    side = ('<aside id="sidebar"><div class="grp"><span>导航</span>'
-            '<a href="%sindex.html">首页</a><a href="%ssearch.html">搜索</a></div>%s</aside>'
-            % (root, root, nav)) if nav is not None else ''
+    side = ('<aside id="sidebar">%s</aside>' % nav) if nav is not None else ''
     return '''<!DOCTYPE html>
 <html lang="zh-CN" data-root="{root}">
 <head>
