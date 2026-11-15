@@ -1,0 +1,12 @@
+# 构建产物与本地文件
+site/
+.site-test/
+__pycache__/
+*.py[cod]
+
+# 本地存档（个人进度，不入库）
+末日丧尸_本地存档.md
+
+# 系统文件
+.DS_Store
+Thumbs.db
