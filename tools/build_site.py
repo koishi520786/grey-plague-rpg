@@ -306,10 +306,25 @@ def build(src, out, title, subtitle, accent, repo, exclude=(), home=None):
 
     alltext = '\n'.join(d['text'] for d in docs)
     stats = [('文档', len(docs)), ('字数', '%d 千' % (len(alltext) // 1000))]
-    for label, pat in [('势力', r'F-0\d'), ('地点', r'LOC-\d{2}'), ('人物', r'NPC-\d{2}'),
-                       ('丧尸类型', r'Z-[1-6][a-z]?'),
-                       ('商品条目', r'(?:SUP|MED|AMM|ARM|MAT|TOOL|VEH|GROW|RARE)-\d{2,3}|WPN-[MF]\d{2}')]:
+    for label, pat in [('势力', r'F-0\d'), ('地点', r'LOC-\d{2}'), ('人物', r'NPC-\d{2}')]:
         stats.append((label, len(set(re.findall(pat, alltext)))))
+
+    # 丧尸类型：只数图鉴里的二级标题，避免把"保留空号 Z-4b"算进去
+    zfile = os.path.join(src, '02_丧尸', '02_丧尸类型图鉴.md')
+    if os.path.exists(zfile):
+        stats.append(('丧尸类型', len(re.findall(r'^#{2,3}\s+Z-', open(zfile, encoding='utf-8').read(),
+                                            flags=re.M))))
+
+    # 商品条目：只数索引表格中的编号行，避免把脚注里的空号算进去
+    ifile = os.path.join(src, '交易系统', '商品索引.md')
+    if os.path.exists(ifile):
+        codes = set()
+        for line in open(ifile, encoding='utf-8'):
+            if line.lstrip().startswith('|'):
+                c = line.strip().strip('|').split('|')[0].strip().strip('*')
+                if re.fullmatch(r'(?:SUP|MED|AMM|ARM|MAT|TOOL|VEH|GROW|RARE)-\d{2,3}|WPN-[MF]\d{2}', c):
+                    codes.add(c)
+        stats.append(('商品条目', len(codes)))
 
     for i, d in enumerate(docs):
         md.reset()
